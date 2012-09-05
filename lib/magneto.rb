@@ -1,6 +1,7 @@
 require "magneto/config"
 require "magneto/session"
 require "magneto/version"
+require "magneto/errors"
 
 module Magneto
   extend self
