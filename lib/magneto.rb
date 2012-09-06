@@ -2,6 +2,7 @@ require "magneto/config"
 require "magneto/session"
 require "magneto/version"
 require "magneto/errors"
+require 'savon'
 
 module Magneto
   extend self

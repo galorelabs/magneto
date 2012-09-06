@@ -19,6 +19,7 @@ Gem::Specification.new do |gem|
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'savon_spec'
 
   gem.add_runtime_dependency 'savon'
   gem.add_runtime_dependency 'mustache'
