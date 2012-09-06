@@ -8,12 +8,6 @@ describe Magneto::Session do
 end
 
 describe Magneto::Session do
-  let(:client) do
-    Savon::Client.new do
-      wsdl.endpoint = "http://example.com"
-      wsdl.namespace = "http://users.example.com"
-    end
-  end
 
   before do
     Magneto.configure do |config|
@@ -21,16 +15,12 @@ describe Magneto::Session do
       config.api_key = 'bah'
       config.wsdl_v1 = 'wsdl'
     end
-
-    savon.expects(:login).with(:username => 'buh', :api_key => 'bah')
   end
 
-
-  it 'should return true if login ' do
-    # Savon::Client.any_instance.should_receive(:request).and_return 'foo'
-    # Savon::Client.new(Magneto.config.wsdl_v1)
-    client.request(:login) do
-      soap.body = { :id => 1 }
-    end
+  it 'should return a Session object if log in succeed' do
+    success = {:login_response=>{:login_return=>"7ab1f29cd18ac06f309c89ba96517ada"}}
+    Savon::Client.any_instance.should_receive(:request).with(:login).and_return success
+    client = Magneto::Session.new
+    client.should be_a Magneto::Session
   end
 end

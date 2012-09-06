@@ -16,4 +16,10 @@ module Magneto
   end
 
   attr_writer :config
+  Savon.configure do |config|
+    config.log = false
+    config.log_level = :info
+    config.raise_errors = false
+  end
+  HTTPI.log = false
 end
