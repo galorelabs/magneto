@@ -2,14 +2,15 @@ require 'rubygems'
 require 'savon'
 
 Savon.configure do |config|
-  #config.log = false
-  #config.log_level = :info
+  config.log = false
+  config.log_level = :info
   #config.logger = Rails.logger
-  config.pretty_print_xml = true
-  #config.raise_errors = false
+  #config.pretty_print_xml = true
+  config.raise_errors = false
   #config.env_namespace = :soapenv
   #config.soap_header = { auth: { username: "admin", password: "secret" } }
 end
+HTTPI.log = false
 
 
 
@@ -21,6 +22,7 @@ client = Savon::Client.new "#{base_url}/index.php/api/soap/?wsdl"
 
 #login
 response = client.request :login, :body => { :username => username, :api_key => api_key }
+puts response.to_hash.inspect
 session_id = response.to_hash[:login_response][:login_return]
 
 
