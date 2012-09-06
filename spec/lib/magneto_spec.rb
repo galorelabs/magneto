@@ -1,5 +1,9 @@
 require 'spec_helper'
 
+def stub_successful_login
+  success = {:login_response=>{:login_return=>"7ab1f29cd18ac06f309c89ba96517ada"}}
+  Savon::Client.any_instance.should_receive(:request).with(:login).and_return success
+end
 
 describe Magneto::Session do
   it 'should raise error if api_user, api_key and at least one wsdl are not present' do
@@ -19,8 +23,7 @@ describe Magneto::Session do
 
   describe '.logged' do
     it 'should return true if log in succeed' do
-      success = {:login_response=>{:login_return=>"7ab1f29cd18ac06f309c89ba96517ada"}}
-      Savon::Client.any_instance.should_receive(:request).with(:login).and_return success
+      stub_successful_login
       session = Magneto::Session.new
       session.should be_a Magneto::Session
       session.login()
@@ -36,13 +39,22 @@ describe Magneto::Session do
       session.logged.should be false
     end
   end
-  describe '.session_token' do
+  describe '.token' do
     it 'should return session token' do
-      success = {:login_response=>{:login_return=>"7ab1f29cd18ac06f309c89ba96517ada"}}
-      Savon::Client.any_instance.should_receive(:request).with(:login).and_return success
+      stub_successful_login
       session = Magneto::Session.new
       session.login()
-      session.session_token.should eq '7ab1f29cd18ac06f309c89ba96517ada'
+      session.token.should eq '7ab1f29cd18ac06f309c89ba96517ada'
     end
   end
+
+  describe '.client' do
+    it 'should be a Savon::Client instance' do
+      stub_successful_login
+      session = Magneto::Session.new
+      session.login()
+      session.client.should be_a Savon::Client
+    end
+  end
+
 end
