@@ -1,4 +1,5 @@
 require "magneto/config"
+require "magneto/cart"
 require "magneto/session"
 require "magneto/version"
 require "magneto/errors"
@@ -14,8 +15,12 @@ module Magneto
   def config
     @config ||= Config.default
   end
+  
+  def client
+    @client
+  end
 
-  attr_writer :config
+  attr_writer :config, :client
   Savon.configure do |config|
     config.log = false
     config.log_level = :info
