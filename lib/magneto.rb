@@ -1,3 +1,4 @@
+require "magneto/product"
 require "magneto/config"
 require "magneto/cart"
 require "magneto/session"
@@ -18,6 +19,10 @@ module Magneto
   
   def client
     @client
+  end
+  
+  def self.product
+    @@product ||= Magneto::Product.new
   end
 
   attr_writer :config, :client
