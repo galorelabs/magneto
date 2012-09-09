@@ -21,8 +21,7 @@ describe Magneto::Session do
     Magneto.client.should be_a Savon::Client
   end
 
-  describe '.login' do
-    context '.logged'
+  describe '#login' do
     it 'should return true if log in succeed' do
       stub_login
       session.should be_a Magneto::Session
@@ -36,15 +35,15 @@ describe Magneto::Session do
     end
   end
 
-  describe '.token' do
-    it 'should return session token' do
+  describe '@token' do
+    it 'should hold session token' do
       stub_login
       session.login()
       session.token.should eq '7ab1f29cd18ac06f309c89ba96517ada'
     end
   end
 
-  describe '.cart' do
+  describe '@cart' do
     pending 'should hold a cart object' do
       session.cart.should be_a Magneto::Cart
     end
