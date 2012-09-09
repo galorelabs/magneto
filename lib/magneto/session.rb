@@ -8,13 +8,15 @@ module Magneto
     end
 
     def login
-      @logged = false
       client = Savon::Client.new Magneto.config.wsdl_v1
-      response =  client.request :login, :body => { :username => Magneto.config.api_user , :api_key => Magneto.config.api_key }
-      if response.to_hash.has_key? :login_response
+      response =  client.request(:login, :body => { :username => Magneto.config.api_user , :api_key => Magneto.config.api_key }).to_hash
+      if response.has_key? :login_response
         Magneto.client = client
         @logged = true
         @token = response[:login_response][:login_return]
+      else
+        @logged = false
+        raise Magneto::LoginError.new(response)
       end
     end
 

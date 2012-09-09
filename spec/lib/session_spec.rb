@@ -30,11 +30,9 @@ describe Magneto::Session do
       session.logged.should be true
     end
 
-    it 'should return false if log in succeed' do
+    it 'should should raise error if log is unsuccesful' do
       stub_login(false)
-      session.should be_a Magneto::Session
-      session.login()
-      session.logged.should be false
+      lambda { session.login() } .should raise_error(Magneto::LoginError)
     end
   end
 
