@@ -1,0 +1,12 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:Magento" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <SOAP-ENV:Body>
+        <ns1:call>
+            <sessionId xsi:type="xsd:string">token</sessionId>
+            <resourcePath xsi:type="xsd:string">cart_shipping.method</resourcePath>
+            <args SOAP-ENC:arrayType="xsd:ur-type[2]" xsi:type="SOAP-ENC:Array">
+                <item xsi:type="xsd:int">1212</item>
+                <item xsi:type="xsd:string">flatrate_flatrate</item>
+            </args>
+        </ns1:call>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

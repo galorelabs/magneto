@@ -26,6 +26,24 @@ module Magneto
       end
       [@header, template.render, @footer].join
     end
+
+    def cart_shipping_method(shipping_method)
+      [@header, '<item xsi:type="xsd:string">flatrate_flatrate</item>', @footer].join
+    end
+
+    def cart_payment_method(options)
+      [@header, '<item xsi:type="ns2:Map"><item><key xsi:type="xsd:string">method</key><value xsi:type="xsd:string">checkmo</value></item></item>', @footer].join
+    end
+
+    def cart_order(options)
+      [@header, '<item xsi:nil="true"/><item xsi:nil="true"/>', @footer].join
+    end
+    
+    def cart_customer_set(user)
+      [@header, 'foo', @footer].join
+    end
+
+
   end
   class Products < ::Mustache
   end

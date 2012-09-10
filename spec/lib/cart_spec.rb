@@ -44,9 +44,38 @@ describe Magneto::Cart do
       cart.template('cart_product.add',[{9987=>1},{9984=>1}]).should be_equivalent_to(expected_xml)
     end
   end
-  pending 'set_customer'
+
+  context '#set_customer' do
+    it 'should generate the correct xml' do
+      expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_customer.set.xml'))
+      stub_cart
+      cart.template('cart_customer.set').should be_equivalent_to(expected_xml)
+    end
+  end
+
   pending 'set_customer_addresses'
-  pending 'set_shipping_method'
-  pending 'set_payment_method'
-  pending 'place_order'
+
+  context '#set_shipping_method' do
+    it 'should generate the correct xml' do
+      expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_shipping.method.xml'))
+      stub_cart
+      cart.template('cart_shipping.method').should be_equivalent_to(expected_xml)
+    end
+  end
+
+  context '#set_payment_method' do
+    it 'should generate the correct xml' do
+      expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_payment.method.xml'))
+      stub_cart
+      cart.template('cart_payment.method').should be_equivalent_to(expected_xml)
+    end
+  end
+
+  context '#place_order' do
+    it 'should generate the correct xml' do
+      expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart.order.xml'))
+      stub_cart
+      cart.template('cart.order').should be_equivalent_to(expected_xml)
+    end
+  end
 end
