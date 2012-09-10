@@ -18,16 +18,4 @@ def config_magneto
   end
 end
 
-RSpec::Matchers.define :be_xml_equivalent do |expected|
-  match do |actual|
-    # a = actual.gsub(/\n/, " ").gsub(/>\s*</, "><").split(//)
-    # puts a.inspect
-    # b = expected.gsub(/\n/, " ").gsub(/>\s*</, "><").split(//)
-    # puts b.inspect
-    # puts a == b
-    # puts '-----------'
-    actual.gsub(/\n/, " ").gsub(/>\s*</, "><") == expected.gsub(/\n/, " ").gsub(/>\s*</, "><")
-  end
-end
-
 
