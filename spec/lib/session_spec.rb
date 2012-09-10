@@ -44,7 +44,8 @@ describe Magneto::Session do
   end
 
   describe '@cart' do
-    pending 'should hold a cart object' do
+    it 'should hold a cart object' do
+      pending("don't know how to make this pass")
       session.cart.should be_a Magneto::Cart
     end
   end
