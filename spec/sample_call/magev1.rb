@@ -49,7 +49,7 @@ response = client.request :call do |soap|
                     <item xsi:type="ns2:Map">
                         <item>
                             <key xsi:type="xsd:string">product_id</key>
-                            <value xsi:type="xsd:string">9987</value>
+                            <value xsi:type="xsd:int">9987</value>
                         </item>
                         <item>
                             <key xsi:type="xsd:string">quantity</key>

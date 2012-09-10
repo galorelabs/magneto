@@ -17,8 +17,14 @@ module Magneto
     end
 
     def cart_product_add(products)
-      template = Products.new.render
-      [@header, template, @footer].join
+      template = Products.new
+      template[:products] = []
+      products.each do |product|
+        product_id = product.keys.first
+        quantity = product[product_id]
+        template[:products] << {:product_id => product_id, :quantity => quantity}
+      end
+      [@header, template.render, @footer].join
     end
   end
   class Products < ::Mustache

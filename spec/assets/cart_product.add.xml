@@ -6,27 +6,27 @@
             <args SOAP-ENC:arrayType="xsd:ur-type[2]" xsi:type="SOAP-ENC:Array">
                 <item xsi:type="xsd:int">1212</item>
                 <item SOAP-ENC:arrayType="ns2:Map[2]" xsi:type="SOAP-ENC:Array">
-                    <item xsi:type="ns2:Map">
-                        <item>
-                            <key xsi:type="xsd:string">product_id</key>
-                            <value xsi:type="xsd:string">9987</value>
-                        </item>
-                        <item>
-                            <key xsi:type="xsd:string">quantity</key>
-                            <value xsi:type="xsd:int">1</value>
-                        </item>
-                    </item>
-                    <item xsi:type="ns2:Map">
-                        <item>
-                            <key xsi:type="xsd:string">product_id</key>
-                            <value xsi:type="xsd:int">9884</value>
-                        </item>
-                        <item>
-                            <key xsi:type="xsd:string">quantity</key>
-                            <value xsi:type="xsd:int">1</value>
-                        </item>
-                    </item>
-                </item>
+                         <item xsi:type="ns2:Map">
+           <item>
+             <key xsi:type="xsd:string">product_id</key>
+             <value xsi:type="xsd:int">9987</value>
+           </item>
+           <item>
+             <key xsi:type="xsd:string">quantity</key>
+             <value xsi:type="xsd:int">1</value>
+           </item>
+         </item>
+         <item xsi:type="ns2:Map">
+           <item>
+             <key xsi:type="xsd:string">product_id</key>
+             <value xsi:type="xsd:int">9984</value>
+           </item>
+           <item>
+             <key xsi:type="xsd:string">quantity</key>
+             <value xsi:type="xsd:int">1</value>
+           </item>
+       </item>              
+     </item>
             </args>
         </ns1:call>
     </SOAP-ENV:Body>

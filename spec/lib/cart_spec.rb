@@ -35,13 +35,13 @@ describe Magneto::Cart do
       soap = mock('soap')
       Magneto.client.should_receive(:request).with(:call).and_yield(soap)
       soap.should_receive('xml=')
-      cart.add_product([{9987=>1},{9984=>1}])
+      cart.add_product([{9987=>1},{9884=>1}])
     end
 
     it 'should generate the correct xml' do
       expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_product.add.xml'))
       stub_cart
-      cart.template('cart_product.add',[{9987=>1},{9984=>1}]).should be_xml_equivalent(expected_xml)
+      cart.template('cart_product.add',[{9987=>1},{9984=>1}]).should be_equivalent_to(expected_xml)
     end
   end
   pending 'set_customer'
