@@ -1,0 +1,22 @@
+                <item SOAP-ENC:arrayType="ns2:Map[2]" xsi:type="SOAP-ENC:Array">
+                    <item xsi:type="ns2:Map">
+                        <item>
+                            <key xsi:type="xsd:string">product_id</key>
+                            <value xsi:type="xsd:string">9987</value>
+                        </item>
+                        <item>
+                            <key xsi:type="xsd:string">quantity</key>
+                            <value xsi:type="xsd:int">1</value>
+                        </item>
+                    </item>
+                    <item xsi:type="ns2:Map">
+                        <item>
+                            <key xsi:type="xsd:string">product_id</key>
+                            <value xsi:type="xsd:int">9884</value>
+                        </item>
+                        <item>
+                            <key xsi:type="xsd:string">quantity</key>
+                            <value xsi:type="xsd:int">1</value>
+                        </item>
+                    </item>
+                </item>

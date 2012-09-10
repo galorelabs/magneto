@@ -16,3 +16,11 @@ def config_magneto
     config.wsdl_v1 = 'http://www.example.com/wdsl'
   end
 end
+
+RSpec::Matchers.define :be_xml_equivalent do |expected|
+  match do |actual|
+    actual.gsub(/\n/, " ").gsub(/>\s*</, "><") == expected.gsub(/\n/, " ").gsub(/>\s*</, "><")
+  end
+end
+
+

@@ -1,4 +1,5 @@
 require "magneto/product"
+require "magneto/xml_template"
 require "magneto/config"
 require "magneto/cart"
 require "magneto/session"
