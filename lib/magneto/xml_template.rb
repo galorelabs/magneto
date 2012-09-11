@@ -40,17 +40,20 @@ module Magneto
     end
     
     def cart_customer_set(user)
-      [@header, 'foo', @footer].join
+      template = CartCustomer.new
+      template[:firstname] = user[:firstname]
+      template[:lastname] = user[:lastname]
+      template[:email] = user[:email]
+      [@header, template.render, @footer].join
     end
 
 
   end
-  class Products < ::Mustache
-  end
-  class Header < ::Mustache
-  end
-  class Footer < ::Mustache
-  end
+  class CartCustomer < ::Mustache; end
+  class CartAddresses < ::Mustache; end
+  class Products < ::Mustache; end
+  class Header < ::Mustache; end
+  class Footer < ::Mustache;end
 end
 
 

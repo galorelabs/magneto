@@ -18,7 +18,7 @@ describe Magneto::Cart do
     cart.cart_id.should eq '1212'
   end
 
-  context '#add_product' do
+  describe '#add_product' do
     it 'should raise error if you don t pass an array of product_id => quantity' do
       stub_cart
       lambda {cart.add_product(12345=>2)}.should raise_error(Magneto::CartError)
@@ -45,17 +45,22 @@ describe Magneto::Cart do
     end
   end
 
-  context '#set_customer' do
+  describe '#set_customer' do
+    it 'should call the template object with correct paramenters' do
+      stub_cart
+      cart.should_receive(:template).with('cart_customer.set', {:firstname => 'Matteo', :lastname => 'Parmi', :email => 'teo@blomming.com'})
+      cart.set_customer({:firstname => 'Matteo', :lastname => 'Parmi', :email => 'teo@blomming.com'})
+    end
     it 'should generate the correct xml' do
       expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_customer.set.xml'))
       stub_cart
-      cart.template('cart_customer.set').should be_equivalent_to(expected_xml)
+      cart.template('cart_customer.set', {:firstname => 'Matteo', :lastname => 'Parmi', :email => 'teo@blomming.com'}).should be_equivalent_to(expected_xml)
     end
   end
 
-  pending 'set_customer_addresses'
+  #context '#set_customer_addresses'
 
-  context '#set_shipping_method' do
+  describe '#set_shipping_method' do
     it 'should generate the correct xml' do
       expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_shipping.method.xml'))
       stub_cart
@@ -63,7 +68,7 @@ describe Magneto::Cart do
     end
   end
 
-  context '#set_payment_method' do
+  describe '#set_payment_method' do
     it 'should generate the correct xml' do
       expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_payment.method.xml'))
       stub_cart
@@ -71,7 +76,7 @@ describe Magneto::Cart do
     end
   end
 
-  context '#place_order' do
+  describe '#place_order' do
     it 'should generate the correct xml' do
       expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart.order.xml'))
       stub_cart

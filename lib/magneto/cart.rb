@@ -29,6 +29,11 @@ module Magneto
       Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
     end
 
+    def set_customer(user)
+      xml = template('cart_customer.set',user)
+      Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+    end
+
     def template(resource_path, data=nil)
       method_call = resource_path.gsub('.', '_')
       Magneto::XmlTemplate.new(token, cart_id, resource_path).send(method_call, data)
