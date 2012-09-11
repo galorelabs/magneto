@@ -1,0 +1,121 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:Magento" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns2="http://xml.apache.org/xml-soap" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <SOAP-ENV:Body>
+        <ns1:call>
+            <sessionId xsi:type="xsd:string">token</sessionId>
+            <resourcePath xsi:type="xsd:string">cart_customer.addresses</resourcePath>
+            <args SOAP-ENC:arrayType="xsd:ur-type[2]" xsi:type="SOAP-ENC:Array">
+                <item xsi:type="xsd:int">1212</item>
+                <item SOAP-ENC:arrayType="ns2:Map[2]" xsi:type="SOAP-ENC:Array">
+                    <item xsi:type="ns2:Map">
+                    <item>
+                    <key xsi:type="xsd:string">mode</key>
+                    <value xsi:type="xsd:string">shipping</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">firstname</key>
+                    <value xsi:type="xsd:string">Matteo</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">lastname</key>
+                    <value xsi:type="xsd:string">Parmi</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">company</key>
+                    <value xsi:type="xsd:string">Blomming</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">street</key>
+                    <value xsi:type="xsd:string">Via teodosio 65</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">city</key>
+                    <value xsi:type="xsd:string">Milano</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">region</key>
+                    <value xsi:type="xsd:string">MI</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">postcode</key>
+                    <value xsi:type="xsd:string">20100</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">country_id</key>
+                    <value xsi:type="xsd:string">IT</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">telephone</key>
+                    <value xsi:type="xsd:string">0123456789</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">fax</key>
+                    <value xsi:type="xsd:string">0123456789</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">is_default_shipping</key>
+                    <value xsi:type="xsd:int">0</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">is_default_billing</key>
+                    <value xsi:type="xsd:int">0</value>
+                </item>
+            </item>
+            <item xsi:type="ns2:Map">
+                <item>
+                <key xsi:type="xsd:string">mode</key>
+                <value xsi:type="xsd:string">billing</value>
+            </item>
+                            <item>
+                    <key xsi:type="xsd:string">firstname</key>
+                    <value xsi:type="xsd:string">Matteo</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">lastname</key>
+                    <value xsi:type="xsd:string">Parmi</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">company</key>
+                    <value xsi:type="xsd:string">Blomming</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">street</key>
+                    <value xsi:type="xsd:string">Via teodosio 65</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">city</key>
+                    <value xsi:type="xsd:string">Milano</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">region</key>
+                    <value xsi:type="xsd:string">MI</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">postcode</key>
+                    <value xsi:type="xsd:string">20100</value>
+                </item>
+                <item>
+                    <key xsi:type="xsd:string">country_id</key>
+                    <value xsi:type="xsd:string">IT</value>
+                </item>
+            <item>
+                <key xsi:type="xsd:string">telephone</key>
+                <value xsi:type="xsd:string">0123456789</value>
+            </item>
+            <item>
+                <key xsi:type="xsd:string">fax</key>
+                <value xsi:type="xsd:string">0123456789</value>
+            </item>
+            <item>
+                <key xsi:type="xsd:string">is_default_shipping</key>
+                <value xsi:type="xsd:int">0</value>
+            </item>
+            <item>
+                <key xsi:type="xsd:string">is_default_billing</key>
+                <value xsi:type="xsd:int">0</value>
+            </item>
+        </item>
+    </item>
+</args>
+</ns1:call>
+</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

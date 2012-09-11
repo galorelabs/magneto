@@ -67,7 +67,23 @@ describe Magneto::Cart do
     it 'should generate the correct xml' do
       expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_customer.addresses.xml'))
       stub_cart
-      cart.template('cart_customer.addresses', {:firstname => 'Matteo', :lastname => 'Parmi', :email => 'teo@blomming.com'}).should be_equivalent_to(expected_xml)
+      customer = {
+        :firstname => 'Matteo',
+        :lastname => 'Parmi',
+        :company => 'Blomming',
+        :street => 'Via teodosio 65',
+        :city => 'Milano',
+        :region => 'MI',
+        :postcode => '20100',
+        :country_id => 'IT',
+        :telephone => '0123456789',
+        :fax => '0123456789'
+      }
+      addresses = {
+        :shipping_address => customer,
+        :billing_address => customer
+      }
+      cart.template('cart_customer.addresses', addresses).should be_equivalent_to(expected_xml)
     end
   end
 
@@ -98,6 +114,11 @@ describe Magneto::Cart do
   end
 
   describe '#place_order' do
+    it 'should call the template object with correct paramenters' do
+      stub_cart
+      cart.should_receive(:template).with('cart.order')
+      cart.place_order
+    end
     it 'should generate the correct xml' do
       expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart.order.xml'))
       stub_cart
