@@ -27,12 +27,12 @@ module Magneto
       [@header, template.render, @footer].join
     end
 
-    def cart_shipping_method(shipping_method)
-      [@header, '<item xsi:type="xsd:string">flatrate_flatrate</item>', @footer].join
+    def cart_shipping_method(method)
+      [@header, "<item xsi:type=\"xsd:string\">#{method}</item>", @footer].join
     end
 
-    def cart_payment_method(options)
-      [@header, '<item xsi:type="ns2:Map"><item><key xsi:type="xsd:string">method</key><value xsi:type="xsd:string">checkmo</value></item></item>', @footer].join
+    def cart_payment_method(method)
+      [@header, "<item xsi:type=\"ns2:Map\"><item><key xsi:type=\"xsd:string\">method</key><value xsi:type=\"xsd:string\">#{method}</value></item></item>", @footer].join
     end
 
     def cart_order(options)
@@ -46,11 +46,17 @@ module Magneto
       template[:email] = user[:email]
       [@header, template.render, @footer].join
     end
-
+    
+    def cart_customer_addresses(user)
+      template = CartCustomerAddresses.new
+      template[:shipping_address] = user[:shipping_address]
+      template[:billing_address] = user[:billing_address]
+      [@header, template.render, @footer].join
+    end
 
   end
   class CartCustomer < ::Mustache; end
-  class CartAddresses < ::Mustache; end
+  class CartCustomerAddresses < ::Mustache; end
   class Products < ::Mustache; end
   class Header < ::Mustache; end
   class Footer < ::Mustache;end

@@ -14,13 +14,13 @@ module Magneto
       Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
     end
 
-    def set_shipping_method
-      xml = template('cart_shipping.method')
+    def set_shipping_method(method)
+      xml = template('cart_shipping.method', method)
       Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
     end
 
-    def set_payment_method
-      xml = template('cart_payment.method')
+    def set_payment_method(method)
+      xml = template('cart_payment.method', method)
       Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
     end
 
@@ -31,6 +31,11 @@ module Magneto
 
     def set_customer(user)
       xml = template('cart_customer.set',user)
+      Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+    end
+
+    def set_customer_addresses(user)
+      xml = template('cart_customer.addresses',user)
       Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
     end
 

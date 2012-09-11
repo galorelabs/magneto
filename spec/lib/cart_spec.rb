@@ -58,21 +58,42 @@ describe Magneto::Cart do
     end
   end
 
-  #context '#set_customer_addresses'
+  describe '#set_customer_addresses' do
+    it 'should call the template object with correct paramenters' do
+      stub_cart
+      cart.should_receive(:template).with('cart_customer.addresses', {:firstname => 'Matteo', :lastname => 'Parmi', :email => 'teo@blomming.com'})
+      cart.set_customer_addresses({:firstname => 'Matteo', :lastname => 'Parmi', :email => 'teo@blomming.com'})
+    end
+    it 'should generate the correct xml' do
+      expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_customer.addresses.xml'))
+      stub_cart
+      cart.template('cart_customer.addresses', {:firstname => 'Matteo', :lastname => 'Parmi', :email => 'teo@blomming.com'}).should be_equivalent_to(expected_xml)
+    end
+  end
 
   describe '#set_shipping_method' do
+    it 'should call the template object with correct paramenters' do
+      stub_cart
+      cart.should_receive(:template).with('cart_shipping.method', 'foo')
+      cart.set_shipping_method('foo')
+    end
     it 'should generate the correct xml' do
       expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_shipping.method.xml'))
       stub_cart
-      cart.template('cart_shipping.method').should be_equivalent_to(expected_xml)
+      cart.template('cart_shipping.method', 'flatrate_flatrate').should be_equivalent_to(expected_xml)
     end
   end
 
   describe '#set_payment_method' do
+    it 'should call the template object with correct paramenters' do
+      stub_cart
+      cart.should_receive(:template).with('cart_payment.method', 'foo')
+      cart.set_payment_method('foo')
+    end
     it 'should generate the correct xml' do
       expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_payment.method.xml'))
       stub_cart
-      cart.template('cart_payment.method').should be_equivalent_to(expected_xml)
+      cart.template('cart_payment.method', 'checkmo').should be_equivalent_to(expected_xml)
     end
   end
 
