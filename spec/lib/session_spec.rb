@@ -4,6 +4,26 @@ describe Magneto::Session do
   it 'should raise error if api_user, api_key and at least one wsdl are not present' do
     lambda { Magneto::Session.new() }.should raise_error(Magneto::ConfigError)
   end
+
+  it 'should can override config variables if set in initilizer' do
+    Magneto.configure do |config|
+      config.api_user = 'foo'
+      config.api_key = 'bar'
+      config.wsdl_v1 = 'http://www.example.com/wdsl'
+      config.wsdl_v2 = 'http://www.example.com/wdsl_v2'
+    end
+    options = {
+      :api_user => 'baz',
+      :api_key => 'bonk',
+      :wsdl_v1 => 'http://www.example.com/wdsl1',
+      :wsdl_v2 => 'http://www.example.com/wdsl2',
+    }
+    session = Magneto::Session.new(options)
+    session.instance_variable_get('@api_user').should eq options[:api_user]
+    session.instance_variable_get('@api_key').should eq options[:api_key]
+    session.instance_variable_get('@wsdl_v1').should eq options[:wsdl_v1]
+    session.instance_variable_get('@wsdl_v2').should eq options[:wsdl_v2]
+  end
 end
 
 describe Magneto::Session do

@@ -2,10 +2,10 @@ module Magneto
   class Product
     attr_accessor :username, :api_key, :client, :session_id
 
-    def initialize()
-      @client = Savon::Client.new(Magneto.config.wsdl_v2) 
-      @username = Magneto.config.api_user
-      @api_key = Magneto.config.api_key
+    def initialize(options)
+      @client = Savon::Client.new(options[:wsdl_v2] || Magneto.config.wsdl_v2) 
+      @username = options[:api_user] || Magneto.config.api_user
+      @api_key = options[:api_key] || Magneto.config.api_key
       @categories = []
       login
     end

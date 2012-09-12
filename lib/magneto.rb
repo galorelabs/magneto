@@ -22,8 +22,8 @@ module Magneto
     @client
   end
   
-  def self.product
-    @@product ||= Magneto::Product.new
+  def self.product(options = {})
+    @@product ||= Magneto::Product.new(options)
   end
 
   attr_writer :config, :client

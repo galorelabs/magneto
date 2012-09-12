@@ -30,7 +30,17 @@ initializer:
 
 use it:
 
-    session = Magneto::Session.new  
+    session = Magneto::Session.new
+
+    # If you refer you can set config options per instance:
+    # options = {
+    #   :api_user => 'xxxxx',
+    #   :api_key => 'xxxxx',
+    #   :wsdl_v1 => 'http://xxxxx.it/index.php/api/soap/?wsdl',
+    #   :wsdl_v2 => 'http://xxxxx.it/index.php/api/v2_soap?wsdl=1',
+    # }
+    # session = Magneto::Session.new(options) 
+
     session.login()
     session.token #return session token
     session.cart  #return cart object
