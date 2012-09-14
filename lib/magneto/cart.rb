@@ -11,37 +11,48 @@ module Magneto
     def add_product(products)
       raise Magneto::CartError.new('must need an array of hash, eg: [{ 9987 =>1 }, { 9884 => 1} ]') unless products.is_a? Array
       xml = template('cart_product.add', products)
-      Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      response = Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      check_response_for_errors(response)
     end
 
     def set_shipping_method(method)
       xml = template('cart_shipping.method', method)
-      Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      response = Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      check_response_for_errors(response)
     end
 
     def set_payment_method(method)
       xml = template('cart_payment.method', method)
-      Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      response = Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      check_response_for_errors(response)
     end
 
     def place_order
       xml = template('cart.order')
-      Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      response = Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      check_response_for_errors(response)
     end
 
     def set_customer(user)
       xml = template('cart_customer.set',user)
-      Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      response = Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      check_response_for_errors(response)
     end
 
     def set_customer_addresses(user)
       xml = template('cart_customer.addresses',user)
-      Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      response = Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
+      check_response_for_errors(response)
     end
 
     def template(resource_path, data=nil)
       method_call = resource_path.gsub('.', '_')
       Magneto::XmlTemplate.new(token, cart_id, resource_path).send(method_call, data)
+    end
+
+    private
+    def check_response_for_errors(response)
+      raise Magneto::SoapError.new(response) if response.has_key? :fault
     end
   end
 end

@@ -6,6 +6,9 @@ def stub_cart
   Magneto.client.stub(:request).and_return(cart_response)
 end
 
+def stub_error
+  Magneto.client.should_receive(:request).with(:call).and_return({:fault => {:faultcode => "foo", :faultstring => "bar"}})
+end
 describe Magneto::Cart do
 
   let(:cart) do
@@ -43,6 +46,12 @@ describe Magneto::Cart do
       stub_cart
       cart.template('cart_product.add',[{9987=>1},{9984=>1}]).should be_equivalent_to(expected_xml)
     end
+
+    it 'should raise an exception if magento call fails' do
+       stub_cart
+       stub_error
+       lambda{cart.add_product([{9987=>1},{9884=>1}])}.should raise_error(Magneto::SoapError)
+    end
   end
 
   describe '#set_customer' do
@@ -55,6 +64,11 @@ describe Magneto::Cart do
       expected_xml = IO.read(File.join(File.dirname(__FILE__), '../assets', 'cart_customer.set.xml'))
       stub_cart
       cart.template('cart_customer.set', {:firstname => 'Matteo', :lastname => 'Parmi', :email => 'teo@blomming.com'}).should be_equivalent_to(expected_xml)
+    end
+    it 'should raise an exception if magento call fails' do
+      stub_cart
+      stub_error
+      lambda{cart.set_customer_addresses('foo')}.should raise_error(Magneto::SoapError)
     end
   end
 

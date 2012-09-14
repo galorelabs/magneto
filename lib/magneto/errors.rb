@@ -13,6 +13,11 @@ module Magneto
       super response.inspect
     end
   end
+  class SoapError < Error
+    def initialize(response)
+      super response.inspect
+    end
+  end
   class CartError < Error
     def initialize(msg)
       super msg

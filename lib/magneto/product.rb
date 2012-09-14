@@ -35,7 +35,7 @@ module Magneto
       else
         ret = [response]
       end
-      ret.map{ |s| {s[:product_id] => { :qty => s[:qty],:is_in_stock=> s[:is_in_stock] } } }.inject {|a, b| a.merge b }
+      ret.map{ |s| {s[:sku] => { :qty => s[:qty], :is_in_stock => s[:is_in_stock] } , s[:product_id] => { :qty => s[:qty], :is_in_stock=> s[:is_in_stock] } } }.inject {|a, b| a.merge b }
       #return a hash like:
       #{"10I1J2DPA040287-X0004-25"=>{:qty=>"0.0000", :is_in_stock=>"0"}, "10I1J2DPA040287-X0004-28"=>{:qty=>"0.0000", :is_in_stock=>"0"}, "22PCJDMAP4XF00091-7020"=>{:qty=>"0.0000", :is_in_stock=>"1"}}
     end
