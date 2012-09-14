@@ -65,7 +65,11 @@ describe Magneto::Session do
 
   describe '@cart' do
     it 'should hold a cart object' do
-      pending("don't know how to make this pass")
+      response = double('response')
+      response.should_receive(:to_hash).and_return({:call_response=>{:call_return=>"1212"}})
+      client = double('Magneto.client')
+      client.should_receive(:request).and_return response
+      Magneto.stub(:client).and_return(client)
       session.cart.should be_a Magneto::Cart
     end
   end
