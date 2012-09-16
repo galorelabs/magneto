@@ -53,6 +53,7 @@ module Magneto
     private
     def check_response_for_errors(response)
       raise Magneto::SoapError.new(response) if response.has_key? :fault
+      response
     end
   end
 end
