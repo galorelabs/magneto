@@ -88,6 +88,7 @@ use it:
     Magneto.product.stock_info([9987,9884])
 
 ## Notes
+
 This version is tested only with ree-1.8.7-2012.02.
 May not properly works with 1.9.3.x
 Future releases will support latest ruby versions
