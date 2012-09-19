@@ -7,7 +7,7 @@ def stub_cart
 end
 
 def stub_error
-  Magneto.client.should_receive(:request).with(:call).and_return({:fault => {:faultcode => "foo", :faultstring => "bar"}})
+  Magneto.client.should_receive(:request).with(:call).and_return({:fault => {:faultcode => "1212", :faultstring => "bar"}})
 end
 describe Magneto::Cart do
 
