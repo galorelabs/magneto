@@ -28,8 +28,10 @@ module Magneto
     end
 
     def stock_info(skus)
+      login
       response = @client.request :web, :catalog_inventory_stock_item_list, :body => { :session_id => @session_id, :products => soap_array('product', skus) }
       response = response.to_hash
+      raise Magneto::SoapError.new(response) if response.has_key? :fault
       raise Magneto::SoapError.new("#products #{skus.inspect} not exists, response : #{response.to_hash.inspect}") unless response[:catalog_inventory_stock_item_list_response][:result].has_key? :item
       response = response.to_hash[:catalog_inventory_stock_item_list_response][:result][:item]
       if response.is_a? Array
@@ -48,6 +50,7 @@ module Magneto
         #'additionalAttributes' => {'a1' => 'color'},
         'additional_attributes' => {'a1' => 'color', 'a2' => 'size', 'a3' => 'special_price'}
       }
+      login
       response = @client.request :web, :catalog_product_info, :body => { :session_id => @session_id, :product => sku, :identifierType => 'SKU', :attributes => attr}
       response = response.to_hash
       raise Magneto::SoapError.new(response) if response.has_key? :fault
