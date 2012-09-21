@@ -32,7 +32,7 @@ use it:
 
     session = Magneto::Session.new
 
-    # If you refer you can set config options per instance:
+    # If you prefer you can set config options per instance:
     # options = {
     #   :api_user => 'xxxxx',
     #   :api_key => 'xxxxx',
@@ -89,9 +89,9 @@ use it:
 
 ## Notes
 
-This version is tested only with ree-1.8.7-2012.02.
-May not properly works with 1.9.3.x
-Future releases will support latest ruby versions
+* This version is tested only with ree-1.8.7-2012.02.
+* May not properly works with 1.9.3.x
+* Future releases will support latest ruby versions
 
 ## Contributing
 
