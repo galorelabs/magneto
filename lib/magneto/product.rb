@@ -2,7 +2,7 @@ module Magneto
   class Product
     attr_accessor :username, :api_key, :client, :session_id
 
-    def initialize(options)
+    def initialize(options = {})
       @client = Savon::Client.new(options[:wsdl_v2] || Magneto.config.wsdl_v2) 
       @username = options[:api_user] || Magneto.config.api_user
       @api_key = options[:api_key] || Magneto.config.api_key
@@ -11,12 +11,12 @@ module Magneto
     end
 
     def login
-      response = @client.request :web, :login, :body => { :username => @username, :api_key => @api_key }
+      response = @client.request :login, :body => { :username => @username, :api_key => @api_key }
       @session_id = response.to_hash[:login_response][:login_return]
     end
 
     def products_list
-      response = @client.request :web, :catalog_product_list, :body => { :session_id => @session_id}
+      response = @client.request :catalog_product_list, :body => { :session_id => @session_id}
       response.to_hash[:catalog_product_list_response][:store_view][:item]
     end
 
@@ -27,11 +27,23 @@ module Magneto
       response.to_hash["#{method}_response".to_sym]
     end
 
+    def ensure_session_alive
+      response = yield
+      if response.has_key?(:fault)
+        if response[:fault][:faultcode] == "5"
+          login
+          response = yield
+        end
+      end
+      response
+    end
+
     def stock_info(skus)
-      login
-      response = @client.request :web, :catalog_inventory_stock_item_list, :body => { :session_id => @session_id, :products => soap_array('product', skus) }
-      response = response.to_hash
-      raise Magneto::SoapError.new(response) if response.has_key? :fault
+      response = ensure_session_alive do
+        response = @client.request :catalog_inventory_stock_item_list, :body => { :session_id => @session_id, :products => soap_array('product', skus) }
+        response = response.to_hash
+      end
+      #raise Magneto::SoapError.new(response) if response.has_key? :fault
       raise Magneto::SoapError.new("#products #{skus.inspect} not exists, response : #{response.to_hash.inspect}") unless response[:catalog_inventory_stock_item_list_response][:result].has_key? :item
       response = response.to_hash[:catalog_inventory_stock_item_list_response][:result][:item]
       if response.is_a? Array
@@ -50,9 +62,10 @@ module Magneto
         #'additionalAttributes' => {'a1' => 'color'},
         'additional_attributes' => {'a1' => 'color', 'a2' => 'size', 'a3' => 'special_price'}
       }
-      login
-      response = @client.request :web, :catalog_product_info, :body => { :session_id => @session_id, :product => sku, :identifierType => 'SKU', :attributes => attr}
-      response = response.to_hash
+      response = ensure_session_alive do
+        response = @client.request :catalog_product_info, :body => { :session_id => @session_id, :product => sku, :identifierType => 'SKU', :attributes => attr}
+        response = response.to_hash
+      end
       raise Magneto::SoapError.new(response) if response.has_key? :fault
       product = response.to_hash[:catalog_product_info_response][:info]
       product.delete(:"@xsi:type")
@@ -73,7 +86,7 @@ module Magneto
     end
 
     def product_images(sku)
-      response = @client.request :web, :catalog_product_attribute_media_list, :body => { :session_id => @session_id, :product => sku}
+      response = @client.request :catalog_product_attribute_media_list, :body => { :session_id => @session_id, :product => sku}
       if response.to_hash[:catalog_product_attribute_media_list_response][:result][:item]
         imgs = []
         if response.to_hash[:catalog_product_attribute_media_list_response][:result][:item].is_a? Array
@@ -91,7 +104,7 @@ module Magneto
 
     def categories
       return @categories unless @categories.empty?
-      response = @client.request :web, :catalog_category_tree, :body => { :session_id => @session_id}
+      response = @client.request :catalog_category_tree, :body => { :session_id => @session_id}
       parse_categories response.to_hash[:catalog_category_tree_response][:tree][:children][:item]
       @categories
     end
