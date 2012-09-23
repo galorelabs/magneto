@@ -10,7 +10,7 @@ module Magneto
 
     def add_product(products)
       raise Magneto::CartError.new('must need an array of hash, eg: [{ 9987 =>1 }, { 9884 => 1} ]') unless products.is_a? Array
-      xml = template('cart_product.add', products)
+      xml = template('cart_product.add', parse_products(products))
       response = Magneto.client.request(:call) {|soap| soap.xml = xml}.to_hash
       check_response_for_errors(response)
     end
@@ -55,7 +55,7 @@ module Magneto
     # currently in magento 1.6 soap v1 api seems it's impossible to put in the cart
     # a product with quantity more than 1.
     # I've found that putting in the cart the same product many times as quantity does the trick
-    def self.parse_products(products)
+    def parse_products(products)
       parsed_product = []
       products.map do |product|
         product.values.first.times do

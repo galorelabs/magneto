@@ -10,11 +10,13 @@ def stub_error
   Magneto.client.should_receive(:request).with(:call).and_return({:fault => {:faultcode => "1212", :faultstring => "bar"}})
 end
 
-describe Magneto::Cart, '.parse_products' do
-  context 'when some products is placed with quantoty more than one' do
+describe Magneto::Cart, '#parse_products' do
+  context 'when some products is placed with quantity more than one' do
     it 'should output the same product many times as quantity' do
+      stub_cart
+      cart = Magneto::Cart.new('token')
       products = [{ 9987 =>2 }, { 9884 => 2}]
-      Magneto::Cart.parse_products(products).should eq [{9987 => 1}, {9987 => 1}, {9884 => 1}, {9884 => 1}]
+      cart.send(:parse_products, products).should eq [{9987 => 1}, {9987 => 1}, {9884 => 1}, {9884 => 1}]
     end
   end
 end
