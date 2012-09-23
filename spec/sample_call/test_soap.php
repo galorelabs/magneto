@@ -20,12 +20,12 @@ $arrProducts = array(
 array(
   //"sku" => '24PRJUPA01ST00111-7007-33',
   "product_id" => $product_id,
-  "quantity" => 1
+  "quantity" => 2
 ),
 array(
 //  //"sku" => $sku,
 "product_id" => 9884,
- "quantity" => 1
+ "quantity" => 2
 ),
 //array(
 //  //"sku" => $sku,

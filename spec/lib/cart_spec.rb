@@ -9,6 +9,16 @@ end
 def stub_error
   Magneto.client.should_receive(:request).with(:call).and_return({:fault => {:faultcode => "1212", :faultstring => "bar"}})
 end
+
+describe Magneto::Cart, '.parse_products' do
+  context 'when some products is placed with quantoty more than one' do
+    it 'should output the same product many times as quantity' do
+      products = [{ 9987 =>2 }, { 9884 => 2}]
+      Magneto::Cart.parse_products(products).should eq [{9987 => 1}, {9987 => 1}, {9884 => 1}, {9884 => 1}]
+    end
+  end
+end
+
 describe Magneto::Cart do
 
   let(:cart) do
@@ -16,8 +26,7 @@ describe Magneto::Cart do
   end
 
   it 'should create a cart via soap api' do
-    Magneto.client = Savon::Client.new
-    Savon::Client.any_instance.should_receive(:request).with(:call, :body => {  :session_id => 'token',  'resourcePath' => 'cart.create'}).and_return cart_response
+    Magneto.client = Savon::Client.new Savon::Client.any_instance.should_receive(:request).with(:call, :body => {  :session_id => 'token',  'resourcePath' => 'cart.create'}).and_return cart_response
     cart.cart_id.should eq '1212'
   end
 

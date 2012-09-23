@@ -1,6 +1,6 @@
 module Magneto
   class Cart
-    
+
     attr_reader :token, :cart_id
     def initialize(token)
       @token = token
@@ -51,6 +51,20 @@ module Magneto
     end
 
     private
+
+    # currently in magento 1.6 soap v1 api seems it's impossible to put in the cart
+    # a product with quantity more than 1.
+    # I've found that putting in the cart the same product many times as quantity does the trick
+    def self.parse_products(products)
+      parsed_product = []
+      products.map do |product|
+        product.values.first.times do
+          parsed_product << { product.keys.first => 1 }
+        end
+      end
+      parsed_product
+    end
+
     def check_response_for_errors(response)
       raise Magneto::SoapError.new(response) if response.has_key? :fault
       response
