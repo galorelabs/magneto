@@ -14,9 +14,7 @@ HTTPI.log = false
 
 
 
-base_url = "http://jeckerson.stage.h-art.it"
-username = 'testapi'
-api_key = 'fa44066d7b30a9cc0f0dea46f57b3cf3'
+
 
 client = Savon::Client.new "#{base_url}/index.php/api/soap/?wsdl"
 
