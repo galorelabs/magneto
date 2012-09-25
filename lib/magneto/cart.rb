@@ -4,7 +4,8 @@ module Magneto
     attr_reader :token, :cart_id
     def initialize(token)
       @token = token
-      response = Magneto.client.request(:call, :body => {  :session_id => token,  'resourcePath' => 'cart.create' })
+      xml_template = Magneto::CartCreate.new().render({:token => token, :store_id => 1})
+      response = Magneto.client.request(:call) {|soap| soap.xml = xml_template}
       @cart_id = response.to_hash[:call_response][:call_return]
     end
 

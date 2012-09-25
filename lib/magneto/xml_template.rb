@@ -16,6 +16,13 @@ module Magneto
       @footer = Footer.new.render
     end
 
+    def cart_create(token, store_id)
+      template = CartCreate.new
+      template[:token] = token
+      template[:store_id] = store_id
+      template.render
+    end
+
     def cart_product_add(products)
       template = Products.new
       template[:products] = []
@@ -56,6 +63,7 @@ module Magneto
 
   end
   class CartCustomer < ::Mustache; end
+  class CartCreate < ::Mustache; end
   class CartCustomerAddresses < ::Mustache; end
   class Products < ::Mustache; end
   class Header < ::Mustache; end

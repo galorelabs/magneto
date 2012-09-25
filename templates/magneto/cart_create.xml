@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:Magento" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+    <SOAP-ENV:Body>
+        <ns1:call>
+          <sessionId xsi:type="xsd:string">{{token}}</sessionId>
+            <resourcePath xsi:type="xsd:string">cart.create</resourcePath>
+            <args SOAP-ENC:arrayType="xsd:int[1]" xsi:type="SOAP-ENC:Array">
+               <item xsi:type="xsd:int">{{store_id}}</item>
+            </args>
+        </ns1:call>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
