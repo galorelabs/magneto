@@ -15,16 +15,25 @@ module Magneto
       @session_id = response.to_hash[:login_response][:login_return]
     end
 
-    def products_list
-      response = @client.request :catalog_product_list, :body => { :session_id => @session_id}
+    # addedd filters, eg for filter by status = 1:
+    # filter = {'filters' =>
+    #           {'complex_filter' =>
+    #            {'item' =>
+    #             {'key'=>'status',
+    #              'value' =>  {'key' => 'in', 'value' => '1'}
+    #             }
+    #            }
+    #           }
+    #          }
+    def products_list(filters = {})
+      response = @client.request :catalog_product_list, :body => { :session_id => @session_id}.merge(filters)
       response.to_hash[:catalog_product_list_response][:store_view][:item]
     end
 
     def call(method, options = {})
       opt =  {:session_id => @session_id}.merge options
-      puts opt
       response = @client.request :web, method.to_sym, :body => opt
-      response.to_hash["#{method}_response".to_sym]
+      response.to_hash["#{method}_response".to_sym] || response.to_hash
     end
 
     def ensure_session_alive
@@ -56,7 +65,17 @@ module Magneto
       #{"10I1J2DPA040287-X0004-25"=>{:qty=>"0.0000", :is_in_stock=>"0"}, "10I1J2DPA040287-X0004-28"=>{:qty=>"0.0000", :is_in_stock=>"0"}, "22PCJDMAP4XF00091-7020"=>{:qty=>"0.0000", :is_in_stock=>"1"}}
     end
 
-    def product_details(sku)
+    # price rules array can define global discount mapped to magento > promotions > catalog price rules.
+    # At this time magento does not provide a way to pull out these price rules via soal api, so they need to be
+    # hardcoded.
+    # it's an array of hashes like:
+
+    price_rules = [
+      {:categories => [1,2,3], :type => :percentage, :amount => 50},
+      {:categories => [4,5,6], :type => :amount, :amount => 30},
+    ]
+
+    def product_details(sku, price_rules = nil)
       attr = {
         'attributes' => {'a1' => 'name','a2' => 'price', 'a3' => 'description', 'a4' => 'status', 'a5' => 'visibility'},
         #'additionalAttributes' => {'a1' => 'color'},
