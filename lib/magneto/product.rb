@@ -107,7 +107,7 @@ module Magneto
     end
 
     def product_images(sku)
-      response = @client.request :catalog_product_attribute_media_list, :body => { :session_id => @session_id, :product => sku}
+      response = @client.call :catalog_product_attribute_media_list, :message => { :session_id => @session_id, :product => sku}
       if response.to_hash[:catalog_product_attribute_media_list_response][:result][:item]
         imgs = []
         if response.to_hash[:catalog_product_attribute_media_list_response][:result][:item].is_a? Array

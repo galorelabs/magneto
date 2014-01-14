@@ -102,7 +102,18 @@ describe Magneto::Product  do
     end
     
     describe "product_images" do
-      
+      it "displays product_images of a certain SKU" do
+        fixture = File.read("spec/fixture/catalog_product_attribute_media_list.xml")
+        savon.expects(:catalog_product_attribute_media_list).with(message: :any).returns(fixture)
+        
+        images = Magneto.product.product_images('n2610')
+        expect(images).to eq([
+          "http://magento.galoretv.com/media/catalog/product/n/o/nokia-2610-phone-2.jpg",
+          "http://magento.galoretv.com/media/catalog/product/n/o/nokia-2610-phone-1.jpg",
+          "http://magento.galoretv.com/media/catalog/product/n/o/nokia-2610-phone.jpg"
+        ])
+        
+      end
     end
   
 end

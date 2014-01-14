@@ -2,7 +2,7 @@
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:Magento" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
   <SOAP-ENV:Body>
     <ns1:loginResponse>
-      <loginReturn xsi:type="xsd:string">36c5403483abee2e4f3e47f9bc5a8faa</loginReturn>
+      <loginReturn xsi:type="xsd:string">55a5dd43904e0ad8d4aca47644d2b827</loginReturn>
     </ns1:loginResponse>
   </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>

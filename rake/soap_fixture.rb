@@ -8,6 +8,10 @@ class SoapFixture
     @username = 'omsapi'
     @api_key = 'asdfgh'
   end
+  
+  def sample_skus
+    ['n2610', 'bb8100', 'sw810i']
+  end
 
   def soap_array(name,array)
     hash = {}
@@ -16,24 +20,29 @@ class SoapFixture
     end
     hash
   end
-
-  def login
-    @response = @client.call :login, message: {username: @username, 
-      api_key: @api_key}    
-    @session_id = @response.to_hash[:login_response][:login_return]
+  
+  def session_id
+    if @session_id.nil?
+      raise Exception.new "Login is required"
+    end
     @session_id
   end
 
-  def make_fixture_for(api_method,  response_file_name=nil, api_body = nil)
+  def login_then
+    @response = @client.call :login, message: {username: @username, 
+      api_key: @api_key}    
+    @session_id = @response.to_hash[:login_response][:login_return]
+    self #to make this chainable!
+  end
+
+  def make_fixture_for(api_method,  api_body = nil)
     response = @client.call api_method, api_body || {message: {session_id: @session_id}}
     doc = Nokogiri.XML(response.to_xml) do |config|
       config.default_xml.noblanks
     end
     
-    response_file_name = response_file_name || api_method.to_s
-    
-    puts "Writing spec/fixture/#{response_file_name}.xml"
-    File.open("spec/fixture/#{response_file_name}.xml", 'w+') {|f| f.write(doc)}
+    puts "Writing spec/fixture/#{api_method.to_s}.xml"
+    File.open("spec/fixture/#{api_method.to_s}.xml", 'w+') {|f| f.write(doc)}
   end 
   
   

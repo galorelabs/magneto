@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:Magento" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <SOAP-ENV:Body>
+    <ns1:catalogProductAttributeMediaListResponse>
+      <result SOAP-ENC:arrayType="ns1:catalogProductImageEntity[3]" xsi:type="ns1:catalogProductImageEntityArray">
+        <item xsi:type="ns1:catalogProductImageEntity">
+          <file xsi:type="xsd:string">/n/o/nokia-2610-phone-2.jpg</file>
+          <label xsi:type="xsd:string"/>
+          <position xsi:type="xsd:string">0</position>
+          <exclude xsi:type="xsd:string">1</exclude>
+          <url xsi:type="xsd:string">http://magento.galoretv.com/media/catalog/product/n/o/nokia-2610-phone-2.jpg</url>
+          <types SOAP-ENC:arrayType="xsd:string[3]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">thumbnail</item>
+            <item xsi:type="xsd:string">small_image</item>
+            <item xsi:type="xsd:string">image</item>
+          </types>
+        </item>
+        <item xsi:type="ns1:catalogProductImageEntity">
+          <file xsi:type="xsd:string">/n/o/nokia-2610-phone-1.jpg</file>
+          <label xsi:type="xsd:string"/>
+          <position xsi:type="xsd:string">1</position>
+          <exclude xsi:type="xsd:string">0</exclude>
+          <url xsi:type="xsd:string">http://magento.galoretv.com/media/catalog/product/n/o/nokia-2610-phone-1.jpg</url>
+          <types SOAP-ENC:arrayType="xsd:string[0]" xsi:type="ns1:ArrayOfString"/>
+        </item>
+        <item xsi:type="ns1:catalogProductImageEntity">
+          <file xsi:type="xsd:string">/n/o/nokia-2610-phone.jpg</file>
+          <label xsi:type="xsd:string"/>
+          <position xsi:type="xsd:string">2</position>
+          <exclude xsi:type="xsd:string">0</exclude>
+          <url xsi:type="xsd:string">http://magento.galoretv.com/media/catalog/product/n/o/nokia-2610-phone.jpg</url>
+          <types SOAP-ENC:arrayType="xsd:string[0]" xsi:type="ns1:ArrayOfString"/>
+        </item>
+      </result>
+    </ns1:catalogProductAttributeMediaListResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
