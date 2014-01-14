@@ -6,15 +6,11 @@ Magneto: connect to your magento installation
 
 Add this line to your application's Gemfile:
 
-    gem 'magneto'
+    gem 'magneto', github: "galorelabs/magneto"
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install magneto
 
 ## Usage
 
