@@ -6,15 +6,11 @@ Magneto: connect to your magento installation
 
 Add this line to your application's Gemfile:
 
-    gem 'magneto'
+    gem 'magneto', github: "galorelabs/magneto"
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install magneto
 
 ## Usage
 
@@ -79,9 +75,6 @@ use it:
     session.cart.set_payment_method('checkmo')
     session.cart.place_order
 
-
-
-    #this is an inported spikes that uses magento v2 api. not tested.
     Magneto.product.products_list
     Magneto.product.categories
     Magneto.product.product_details(9987)
@@ -89,9 +82,7 @@ use it:
 
 ## Notes
 
-* This version is tested only with ree-1.8.7-2012.02.
-* May not properly works with 1.9.3.x
-* Future releases will support latest ruby versions
+* This version is tested only Ruby MRI 1.9.3.x
 
 ## Contributing
 
