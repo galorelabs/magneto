@@ -1,0 +1,1575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:Magento" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <SOAP-ENV:Body>
+    <ns1:catalogProductListResponse>
+      <storeView SOAP-ENC:arrayType="ns1:catalogProductEntity[120]" xsi:type="ns1:catalogProductEntityArray">
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">16</product_id>
+          <sku xsi:type="xsd:string">n2610</sku>
+          <name xsi:type="xsd:string">Nokia 2610 Phone</name>
+          <set xsi:type="xsd:string">38</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">8</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">17</product_id>
+          <sku xsi:type="xsd:string">bb8100</sku>
+          <name xsi:type="xsd:string">BlackBerry 8100 Pearl</name>
+          <set xsi:type="xsd:string">38</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">8</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">18</product_id>
+          <sku xsi:type="xsd:string">sw810i</sku>
+          <name xsi:type="xsd:string">Sony Ericsson W810i</name>
+          <set xsi:type="xsd:string">38</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">8</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">19</product_id>
+          <sku xsi:type="xsd:string">8525PDA</sku>
+          <name xsi:type="xsd:string">AT&amp;T 8525 PDA</name>
+          <set xsi:type="xsd:string">38</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">8</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">20</product_id>
+          <sku xsi:type="xsd:string">MM-A900M</sku>
+          <name xsi:type="xsd:string">Samsung MM-A900M Ace</name>
+          <set xsi:type="xsd:string">38</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">8</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">25</product_id>
+          <sku xsi:type="xsd:string">MA464LL/A</sku>
+          <name xsi:type="xsd:string">Apple MacBook Pro MA464LL/A 15.4" Notebook PC</name>
+          <set xsi:type="xsd:string">39</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">15</item>
+            <item xsi:type="xsd:string">28</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">26</product_id>
+          <sku xsi:type="xsd:string">LX.FR206.001</sku>
+          <name xsi:type="xsd:string">Acer Ferrari 3200 Notebook Computer PC</name>
+          <set xsi:type="xsd:string">39</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">15</item>
+            <item xsi:type="xsd:string">28</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">27</product_id>
+          <sku xsi:type="xsd:string">VGN-TXN27N/B</sku>
+          <name xsi:type="xsd:string">Sony VAIO VGN-TXN27N/B 11.1" Notebook PC</name>
+          <set xsi:type="xsd:string">39</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[0]" xsi:type="ns1:ArrayOfString"/>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">28</product_id>
+          <sku xsi:type="xsd:string">M285-E</sku>
+          <name xsi:type="xsd:string">Toshiba M285-E 14"</name>
+          <set xsi:type="xsd:string">39</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">15</item>
+            <item xsi:type="xsd:string">28</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">29</product_id>
+          <sku xsi:type="xsd:string">cn_3</sku>
+          <name xsi:type="xsd:string">CN Clogs Beach/Garden Clog</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[0]" xsi:type="ns1:ArrayOfString"/>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">30</product_id>
+          <sku xsi:type="xsd:string">asc_8</sku>
+          <name xsi:type="xsd:string">ASICS® Men's GEL-Kayano® XII</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">31</product_id>
+          <sku xsi:type="xsd:string">steve_4</sku>
+          <name xsi:type="xsd:string">Steven by Steve Madden Pryme Pump</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">32</product_id>
+          <sku xsi:type="xsd:string">nine_3</sku>
+          <name xsi:type="xsd:string">Nine West Women's Lucero Pump</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">33</product_id>
+          <sku xsi:type="xsd:string">ecco_3</sku>
+          <name xsi:type="xsd:string">ECCO Womens Golf Flexor Golf Shoe</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">34</product_id>
+          <sku xsi:type="xsd:string">ken_8</sku>
+          <name xsi:type="xsd:string">Kenneth Cole New York Men's Con-verge Slip-on</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">35</product_id>
+          <sku xsi:type="xsd:string">coal_sm</sku>
+          <name xsi:type="xsd:string">Coalesce: Functioning On Impatience T-Shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">36</product_id>
+          <sku xsi:type="xsd:string">ink_sm</sku>
+          <name xsi:type="xsd:string">Ink Eater: Krylon Bombear Destroyed Tee</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">37</product_id>
+          <sku xsi:type="xsd:string">oc_sm</sku>
+          <name xsi:type="xsd:string">The Only Children: Paisley T-Shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">38</product_id>
+          <sku xsi:type="xsd:string">zol_r_sm</sku>
+          <name xsi:type="xsd:string">Zolof The Rock And Roll Destroyer: LOL Cat T-shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">39</product_id>
+          <sku xsi:type="xsd:string">4fasd5f5</sku>
+          <name xsi:type="xsd:string">The Get Up Kids: Band Camp Pullover Hoodie</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">19</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">41</product_id>
+          <sku xsi:type="xsd:string">384822</sku>
+          <name xsi:type="xsd:string">Akio Dresser</name>
+          <set xsi:type="xsd:string">42</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">23</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">42</product_id>
+          <sku xsi:type="xsd:string">bar1234</sku>
+          <name xsi:type="xsd:string">Barcelona Bamboo Platform Bed</name>
+          <set xsi:type="xsd:string">42</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">23</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">44</product_id>
+          <sku xsi:type="xsd:string">Rebel XT</sku>
+          <name xsi:type="xsd:string">Canon Digital Rebel XT 8MP Digital SLR Camera</name>
+          <set xsi:type="xsd:string">44</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">26</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">45</product_id>
+          <sku xsi:type="xsd:string">QC-2185</sku>
+          <name xsi:type="xsd:string"> Argus QC-2185 Quick Click 5MP Digital Camera</name>
+          <set xsi:type="xsd:string">44</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">26</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">46</product_id>
+          <sku xsi:type="xsd:string">750</sku>
+          <name xsi:type="xsd:string"> Olympus Stylus 750 7.1MP Digital Camera</name>
+          <set xsi:type="xsd:string">44</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">12</item>
+            <item xsi:type="xsd:string">26</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">47</product_id>
+          <sku xsi:type="xsd:string">A630</sku>
+          <name xsi:type="xsd:string">Canon PowerShot A630 8MP Digital Camera with 4x Optical Zoom</name>
+          <set xsi:type="xsd:string">44</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">26</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">48</product_id>
+          <sku xsi:type="xsd:string">C530</sku>
+          <name xsi:type="xsd:string">Kodak EasyShare C530 5MP Digital Camera</name>
+          <set xsi:type="xsd:string">44</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">26</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">49</product_id>
+          <sku xsi:type="xsd:string">ana_9</sku>
+          <name xsi:type="xsd:string">Anashria Womens Premier Leather Sandal</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">51</product_id>
+          <sku xsi:type="xsd:string">1111</sku>
+          <name xsi:type="xsd:string">Ottoman</name>
+          <set xsi:type="xsd:string">42</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">22</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">52</product_id>
+          <sku xsi:type="xsd:string">1112</sku>
+          <name xsi:type="xsd:string">Chair</name>
+          <set xsi:type="xsd:string">42</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">22</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">53</product_id>
+          <sku xsi:type="xsd:string">1113</sku>
+          <name xsi:type="xsd:string">Couch</name>
+          <set xsi:type="xsd:string">42</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">22</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">54</product_id>
+          <sku xsi:type="xsd:string">1114</sku>
+          <name xsi:type="xsd:string">Magento Red Furniture Set</name>
+          <set xsi:type="xsd:string">42</set>
+          <type xsi:type="xsd:string">grouped</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">22</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">74</product_id>
+          <sku xsi:type="xsd:string">ana_3</sku>
+          <name xsi:type="xsd:string">Anashria Womens Premier Leather Sandal</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">75</product_id>
+          <sku xsi:type="xsd:string">ana_4</sku>
+          <name xsi:type="xsd:string">Anashria Womens Premier Leather Sandal</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">79</product_id>
+          <sku xsi:type="xsd:string">ana_5</sku>
+          <name xsi:type="xsd:string">Anashria Womens Premier Leather Sandal</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">80</product_id>
+          <sku xsi:type="xsd:string">ana_6</sku>
+          <name xsi:type="xsd:string">Anashria Womens Premier Leather Sandal</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">81</product_id>
+          <sku xsi:type="xsd:string">ana_7</sku>
+          <name xsi:type="xsd:string">Anashria Womens Premier Leather Sandal</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">82</product_id>
+          <sku xsi:type="xsd:string">ana_8</sku>
+          <name xsi:type="xsd:string">Anashria Womens Premier Leather Sandal</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">83</product_id>
+          <sku xsi:type="xsd:string">cn</sku>
+          <name xsi:type="xsd:string">CN Clogs Beach/Garden Clog</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">configurable</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">84</product_id>
+          <sku xsi:type="xsd:string">cn_4</sku>
+          <name xsi:type="xsd:string">CN Clogs Beach/Garden Clog</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">85</product_id>
+          <sku xsi:type="xsd:string">cn_5</sku>
+          <name xsi:type="xsd:string">CN Clogs Beach/Garden Clog</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">86</product_id>
+          <sku xsi:type="xsd:string">cn_6</sku>
+          <name xsi:type="xsd:string">CN Clogs Beach/Garden Clog</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">87</product_id>
+          <sku xsi:type="xsd:string">cn_7</sku>
+          <name xsi:type="xsd:string">CN Clogs Beach/Garden Clog</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">88</product_id>
+          <sku xsi:type="xsd:string">cn_m8</sku>
+          <name xsi:type="xsd:string">CN Clogs Beach/Garden Clog</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">89</product_id>
+          <sku xsi:type="xsd:string">cn_m9</sku>
+          <name xsi:type="xsd:string">CN Clogs Beach/Garden Clog</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">90</product_id>
+          <sku xsi:type="xsd:string">cn_m10</sku>
+          <name xsi:type="xsd:string">CN Clogs Beach/Garden Clog</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">91</product_id>
+          <sku xsi:type="xsd:string">cn_m11</sku>
+          <name xsi:type="xsd:string">CN Clogs Beach/Garden Clog</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">92</product_id>
+          <sku xsi:type="xsd:string">cn_m12</sku>
+          <name xsi:type="xsd:string">CN Clogs Beach/Garden Clog</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">93</product_id>
+          <sku xsi:type="xsd:string">asc</sku>
+          <name xsi:type="xsd:string">ASICS® Men's GEL-Kayano® XII</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">configurable</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">94</product_id>
+          <sku xsi:type="xsd:string">asc_9</sku>
+          <name xsi:type="xsd:string">ASICS® Men's GEL-Kayano® XII</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">95</product_id>
+          <sku xsi:type="xsd:string">asc_10</sku>
+          <name xsi:type="xsd:string">ASICS® Men's GEL-Kayano® XII</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">96</product_id>
+          <sku xsi:type="xsd:string">asc_11</sku>
+          <name xsi:type="xsd:string">ASICS® Men's GEL-Kayano® XII</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">97</product_id>
+          <sku xsi:type="xsd:string">asc_12</sku>
+          <name xsi:type="xsd:string">ASICS® Men's GEL-Kayano® XII</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">98</product_id>
+          <sku xsi:type="xsd:string">ken</sku>
+          <name xsi:type="xsd:string">Kenneth Cole New York Men's Con-verge Slip-on</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">configurable</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">99</product_id>
+          <sku xsi:type="xsd:string">ken_9</sku>
+          <name xsi:type="xsd:string">Kenneth Cole New York Men's Con-verge Slip-on</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">100</product_id>
+          <sku xsi:type="xsd:string">ken_10</sku>
+          <name xsi:type="xsd:string">Kenneth Cole New York Men's Con-verge Slip-on</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">101</product_id>
+          <sku xsi:type="xsd:string">ken_11</sku>
+          <name xsi:type="xsd:string">Kenneth Cole New York Men's Con-verge Slip-on</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">102</product_id>
+          <sku xsi:type="xsd:string">ken_12</sku>
+          <name xsi:type="xsd:string">Kenneth Cole New York Men's Con-verge Slip-on</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">16</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">103</product_id>
+          <sku xsi:type="xsd:string">steve</sku>
+          <name xsi:type="xsd:string">Steven by Steve Madden Pryme Pump</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">configurable</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">104</product_id>
+          <sku xsi:type="xsd:string">steve_5</sku>
+          <name xsi:type="xsd:string">Steven by Steve Madden Pryme Pump</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">105</product_id>
+          <sku xsi:type="xsd:string">steve_6</sku>
+          <name xsi:type="xsd:string">Steven by Steve Madden Pryme Pump</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">106</product_id>
+          <sku xsi:type="xsd:string">steve_7</sku>
+          <name xsi:type="xsd:string">Steven by Steve Madden Pryme Pump</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">107</product_id>
+          <sku xsi:type="xsd:string">steve_8</sku>
+          <name xsi:type="xsd:string">Steven by Steve Madden Pryme Pump</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">108</product_id>
+          <sku xsi:type="xsd:string">nine</sku>
+          <name xsi:type="xsd:string">Nine West Women's Lucero Pump</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">configurable</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">109</product_id>
+          <sku xsi:type="xsd:string">nine_4</sku>
+          <name xsi:type="xsd:string">Nine West Women's Lucero Pump</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">110</product_id>
+          <sku xsi:type="xsd:string">nine_5</sku>
+          <name xsi:type="xsd:string">Nine West Women's Lucero Pump</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">111</product_id>
+          <sku xsi:type="xsd:string">nine_6</sku>
+          <name xsi:type="xsd:string">Nine West Women's Lucero Pump</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">112</product_id>
+          <sku xsi:type="xsd:string">ecco</sku>
+          <name xsi:type="xsd:string">ECCO Womens Golf Flexor Golf Shoe</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">configurable</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">113</product_id>
+          <sku xsi:type="xsd:string">ecco_4</sku>
+          <name xsi:type="xsd:string">ECCO Womens Golf Flexor Golf Shoe</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">114</product_id>
+          <sku xsi:type="xsd:string">ecco_5</sku>
+          <name xsi:type="xsd:string">ECCO Womens Golf Flexor Golf Shoe</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">115</product_id>
+          <sku xsi:type="xsd:string">ecco_6</sku>
+          <name xsi:type="xsd:string">ECCO Womens Golf Flexor Golf Shoe</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">117</product_id>
+          <sku xsi:type="xsd:string">coal_md</sku>
+          <name xsi:type="xsd:string">Coalesce: Functioning On Impatience T-Shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">118</product_id>
+          <sku xsi:type="xsd:string">coal_lrg</sku>
+          <name xsi:type="xsd:string">Coalesce: Functioning On Impatience T-Shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">119</product_id>
+          <sku xsi:type="xsd:string">coal_1</sku>
+          <name xsi:type="xsd:string">Coalesce: Functioning On Impatience T-Shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">configurable</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">120</product_id>
+          <sku xsi:type="xsd:string">ink</sku>
+          <name xsi:type="xsd:string">Ink Eater: Krylon Bombear Destroyed Tee</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">configurable</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">121</product_id>
+          <sku xsi:type="xsd:string">ink_med</sku>
+          <name xsi:type="xsd:string">Ink Eater: Krylon Bombear Destroyed Tee</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">122</product_id>
+          <sku xsi:type="xsd:string">ink_lrg</sku>
+          <name xsi:type="xsd:string">Ink Eater: Krylon Bombear Destroyed Tee</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">123</product_id>
+          <sku xsi:type="xsd:string">oc</sku>
+          <name xsi:type="xsd:string">The Only Children: Paisley T-Shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">configurable</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">124</product_id>
+          <sku xsi:type="xsd:string">oc_med</sku>
+          <name xsi:type="xsd:string">The Only Children: Paisley T-Shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">125</product_id>
+          <sku xsi:type="xsd:string">oc_lrg</sku>
+          <name xsi:type="xsd:string">The Only Children: Paisley T-Shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">126</product_id>
+          <sku xsi:type="xsd:string">zol</sku>
+          <name xsi:type="xsd:string">Zolof The Rock And Roll Destroyer: LOL Cat T-shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">configurable</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">127</product_id>
+          <sku xsi:type="xsd:string">zol_g_sm</sku>
+          <name xsi:type="xsd:string">Zolof The Rock And Roll Destroyer: LOL Cat T-shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">128</product_id>
+          <sku xsi:type="xsd:string">zol_r_med</sku>
+          <name xsi:type="xsd:string">Zolof The Rock And Roll Destroyer: LOL Cat T-shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">129</product_id>
+          <sku xsi:type="xsd:string">zol_g_med</sku>
+          <name xsi:type="xsd:string">Zolof The Rock And Roll Destroyer: LOL Cat T-shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">130</product_id>
+          <sku xsi:type="xsd:string">zol_r_lrg</sku>
+          <name xsi:type="xsd:string">Zolof The Rock And Roll Destroyer: LOL Cat T-shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">131</product_id>
+          <sku xsi:type="xsd:string">zol_g_lrg</sku>
+          <name xsi:type="xsd:string">Zolof The Rock And Roll Destroyer: LOL Cat T-shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">4</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">132</product_id>
+          <sku xsi:type="xsd:string">ac674</sku>
+          <name xsi:type="xsd:string">SLR Camera Tripod</name>
+          <set xsi:type="xsd:string">9</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">25</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">133</product_id>
+          <sku xsi:type="xsd:string">ac9003</sku>
+          <name xsi:type="xsd:string">Universal Camera Case</name>
+          <set xsi:type="xsd:string">9</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">25</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">134</product_id>
+          <sku xsi:type="xsd:string">ac-66332</sku>
+          <name xsi:type="xsd:string">Universal Camera Charger</name>
+          <set xsi:type="xsd:string">9</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">25</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">135</product_id>
+          <sku xsi:type="xsd:string">ana</sku>
+          <name xsi:type="xsd:string">Anashria Womens Premier Leather Sandal</name>
+          <set xsi:type="xsd:string">40</set>
+          <type xsi:type="xsd:string">configurable</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">17</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">137</product_id>
+          <sku xsi:type="xsd:string">zol_b_med</sku>
+          <name xsi:type="xsd:string">Zolof The Rock And Roll Destroyer: LOL Cat T-shirt</name>
+          <set xsi:type="xsd:string">41</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[0]" xsi:type="ns1:ArrayOfString"/>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">138</product_id>
+          <sku xsi:type="xsd:string">apevia-black</sku>
+          <name xsi:type="xsd:string">Apevia Black X-Cruiser Case ATX Mid-Tower Case (Default)</name>
+          <set xsi:type="xsd:string">9</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">32</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">139</product_id>
+          <sku xsi:type="xsd:string">nzxtlexa</sku>
+          <name xsi:type="xsd:string">NZXT Lexa Silver Aluminum ATX Mid-Tower Case (Default)</name>
+          <set xsi:type="xsd:string">9</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">32</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">140</product_id>
+          <sku xsi:type="xsd:string">2gbdimm</sku>
+          <name xsi:type="xsd:string">Crucial 2GB PC4200 DDR2 533MHz Memory</name>
+          <set xsi:type="xsd:string">58</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">15</item>
+            <item xsi:type="xsd:string">31</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">141</product_id>
+          <sku xsi:type="xsd:string">1gbdimm</sku>
+          <name xsi:type="xsd:string">Crucial 1GB PC4200 DDR2 533MHz Memory</name>
+          <set xsi:type="xsd:string">58</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">15</item>
+            <item xsi:type="xsd:string">31</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">142</product_id>
+          <sku xsi:type="xsd:string">1yr_p_l</sku>
+          <name xsi:type="xsd:string">One Year Extended Warranty - Parts and Labor</name>
+          <set xsi:type="xsd:string">59</set>
+          <type xsi:type="xsd:string">virtual</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[0]" xsi:type="ns1:ArrayOfString"/>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">143</product_id>
+          <sku xsi:type="xsd:string">512dimm</sku>
+          <name xsi:type="xsd:string">Crucial 512MB PC4200 DDR2 533MHz Memory</name>
+          <set xsi:type="xsd:string">58</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">15</item>
+            <item xsi:type="xsd:string">31</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">144</product_id>
+          <sku xsi:type="xsd:string">2yr_p_l</sku>
+          <name xsi:type="xsd:string">Two Year Extended Warranty - Parts and Labor</name>
+          <set xsi:type="xsd:string">59</set>
+          <type xsi:type="xsd:string">virtual</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[0]" xsi:type="ns1:ArrayOfString"/>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">145</product_id>
+          <sku xsi:type="xsd:string">amdphenom</sku>
+          <name xsi:type="xsd:string">AMD Phenom X4 9850 Black Ed. 2.50GHz Retail</name>
+          <set xsi:type="xsd:string">60</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">33</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">146</product_id>
+          <sku xsi:type="xsd:string">3yr_p_l</sku>
+          <name xsi:type="xsd:string">Three Year Extended Warranty - Parts and Labor</name>
+          <set xsi:type="xsd:string">59</set>
+          <type xsi:type="xsd:string">virtual</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[0]" xsi:type="ns1:ArrayOfString"/>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">147</product_id>
+          <sku xsi:type="xsd:string">226bw</sku>
+          <name xsi:type="xsd:string">22" Syncmaster LCD Monitor</name>
+          <set xsi:type="xsd:string">61</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">30</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">148</product_id>
+          <sku xsi:type="xsd:string">amda64</sku>
+          <name xsi:type="xsd:string">AMD A64 X2 3800+ 2.0GHz OEM</name>
+          <set xsi:type="xsd:string">60</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">33</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">149</product_id>
+          <sku xsi:type="xsd:string">1tb7200</sku>
+          <name xsi:type="xsd:string">Western Digital - 1TB HD - 7200RPM</name>
+          <set xsi:type="xsd:string">62</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">29</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">150</product_id>
+          <sku xsi:type="xsd:string">500gb7200</sku>
+          <name xsi:type="xsd:string">Western Digital 500GB HD - 7200RPM</name>
+          <set xsi:type="xsd:string">62</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">29</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">151</product_id>
+          <sku xsi:type="xsd:string">intelc2d</sku>
+          <name xsi:type="xsd:string">Intel C2D E8400 3.0GHz Retail</name>
+          <set xsi:type="xsd:string">60</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">33</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">152</product_id>
+          <sku xsi:type="xsd:string">W2452T-TF</sku>
+          <name xsi:type="xsd:string">24" Widescreen Flat-Panel LCD Monitor</name>
+          <set xsi:type="xsd:string">61</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">30</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">153</product_id>
+          <sku xsi:type="xsd:string">intelcore2extreme</sku>
+          <name xsi:type="xsd:string">Intel Core 2 Extreme QX9775 3.20GHz Retail</name>
+          <set xsi:type="xsd:string">60</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">33</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">154</product_id>
+          <sku xsi:type="xsd:string">500gb5400</sku>
+          <name xsi:type="xsd:string">Seagate 500GB HD - 5400RPM</name>
+          <set xsi:type="xsd:string">62</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">29</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">155</product_id>
+          <sku xsi:type="xsd:string">250gb5400</sku>
+          <name xsi:type="xsd:string">Seagate 250GB HD - 5400RPM</name>
+          <set xsi:type="xsd:string">62</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">29</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">156</product_id>
+          <sku xsi:type="xsd:string">W1952TQ-TF</sku>
+          <name xsi:type="xsd:string">19" Widescreen Flat-Panel LCD Monitor</name>
+          <set xsi:type="xsd:string">61</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">30</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">157</product_id>
+          <sku xsi:type="xsd:string">M9179LL</sku>
+          <name xsi:type="xsd:string">30" Flat-Panel TFT-LCD Cinema HD Monitor</name>
+          <set xsi:type="xsd:string">61</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">30</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">158</product_id>
+          <sku xsi:type="xsd:string">VGN-TXN27N/BW</sku>
+          <name xsi:type="xsd:string">Sony VAIO 11.1" Notebook PC</name>
+          <set xsi:type="xsd:string">39</set>
+          <type xsi:type="xsd:string">bundle</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">28</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">159</product_id>
+          <sku xsi:type="xsd:string">microsoftnatural</sku>
+          <name xsi:type="xsd:string">Microsoft Natural Ergonomic Keyboard 4000</name>
+          <set xsi:type="xsd:string">9</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">34</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">160</product_id>
+          <sku xsi:type="xsd:string">logitechcord</sku>
+          <name xsi:type="xsd:string">Logitech Cordless Optical Trackman</name>
+          <set xsi:type="xsd:string">9</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">34</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">161</product_id>
+          <sku xsi:type="xsd:string">logidinovo</sku>
+          <name xsi:type="xsd:string">Logitech diNovo Edge Keyboard</name>
+          <set xsi:type="xsd:string">9</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">34</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">162</product_id>
+          <sku xsi:type="xsd:string">micronmouse5000</sku>
+          <name xsi:type="xsd:string">Microsoft Wireless Optical Mouse 5000</name>
+          <set xsi:type="xsd:string">9</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">34</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">163</product_id>
+          <sku xsi:type="xsd:string">computer</sku>
+          <name xsi:type="xsd:string">Computer</name>
+          <set xsi:type="xsd:string">9</set>
+          <type xsi:type="xsd:string">bundle</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[2]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">15</item>
+            <item xsi:type="xsd:string">27</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">164</product_id>
+          <sku xsi:type="xsd:string">computer_fixed</sku>
+          <name xsi:type="xsd:string">Gaming Computer</name>
+          <set xsi:type="xsd:string">9</set>
+          <type xsi:type="xsd:string">bundle</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">27</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">165</product_id>
+          <sku xsi:type="xsd:string">mycomputer</sku>
+          <name xsi:type="xsd:string">My Computer</name>
+          <set xsi:type="xsd:string">39</set>
+          <type xsi:type="xsd:string">bundle</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">27</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+        <item xsi:type="ns1:catalogProductEntity">
+          <product_id xsi:type="xsd:string">166</product_id>
+          <sku xsi:type="xsd:string">HTC Touch Diamond</sku>
+          <name xsi:type="xsd:string">HTC Touch Diamond</name>
+          <set xsi:type="xsd:string">38</set>
+          <type xsi:type="xsd:string">simple</type>
+          <category_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">8</item>
+          </category_ids>
+          <website_ids SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+            <item xsi:type="xsd:string">1</item>
+          </website_ids>
+        </item>
+      </storeView>
+    </ns1:catalogProductListResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

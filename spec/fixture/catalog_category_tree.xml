@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:Magento" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <SOAP-ENV:Body>
+    <ns1:catalogCategoryTreeResponse>
+      <tree xsi:type="ns1:catalogCategoryTree">
+        <category_id xsi:type="xsd:int">1</category_id>
+        <parent_id xsi:type="xsd:int">0</parent_id>
+        <name xsi:type="xsd:string">Root</name>
+        <position xsi:type="xsd:int">1</position>
+        <level xsi:type="xsd:int">0</level>
+        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[1]" xsi:type="ns1:ArrayOfCatalogCategoryEntities">
+          <item xsi:type="ns1:catalogCategoryEntity">
+            <category_id xsi:type="xsd:int">3</category_id>
+            <parent_id xsi:type="xsd:int">1</parent_id>
+            <name xsi:type="xsd:string">Root Catalog</name>
+            <is_active xsi:type="xsd:int">1</is_active>
+            <position xsi:type="xsd:int">3</position>
+            <level xsi:type="xsd:int">1</level>
+            <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[4]" xsi:type="ns1:ArrayOfCatalogCategoryEntities">
+              <item xsi:type="ns1:catalogCategoryEntity">
+                <category_id xsi:type="xsd:int">10</category_id>
+                <parent_id xsi:type="xsd:int">3</parent_id>
+                <name xsi:type="xsd:string">Furniture</name>
+                <is_active xsi:type="xsd:int">1</is_active>
+                <position xsi:type="xsd:int">10</position>
+                <level xsi:type="xsd:int">2</level>
+                <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[2]" xsi:type="ns1:ArrayOfCatalogCategoryEntities">
+                  <item xsi:type="ns1:catalogCategoryEntity">
+                    <category_id xsi:type="xsd:int">22</category_id>
+                    <parent_id xsi:type="xsd:int">10</parent_id>
+                    <name xsi:type="xsd:string">Living Room</name>
+                    <is_active xsi:type="xsd:int">1</is_active>
+                    <position xsi:type="xsd:int">22</position>
+                    <level xsi:type="xsd:int">3</level>
+                    <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                  </item>
+                  <item xsi:type="ns1:catalogCategoryEntity">
+                    <category_id xsi:type="xsd:int">23</category_id>
+                    <parent_id xsi:type="xsd:int">10</parent_id>
+                    <name xsi:type="xsd:string">Bedroom</name>
+                    <is_active xsi:type="xsd:int">1</is_active>
+                    <position xsi:type="xsd:int">23</position>
+                    <level xsi:type="xsd:int">3</level>
+                    <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                  </item>
+                </children>
+              </item>
+              <item xsi:type="ns1:catalogCategoryEntity">
+                <category_id xsi:type="xsd:int">13</category_id>
+                <parent_id xsi:type="xsd:int">3</parent_id>
+                <name xsi:type="xsd:string">Electronics</name>
+                <is_active xsi:type="xsd:int">1</is_active>
+                <position xsi:type="xsd:int">13</position>
+                <level xsi:type="xsd:int">2</level>
+                <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[3]" xsi:type="ns1:ArrayOfCatalogCategoryEntities">
+                  <item xsi:type="ns1:catalogCategoryEntity">
+                    <category_id xsi:type="xsd:int">8</category_id>
+                    <parent_id xsi:type="xsd:int">13</parent_id>
+                    <name xsi:type="xsd:string">Cell Phones</name>
+                    <is_active xsi:type="xsd:int">1</is_active>
+                    <position xsi:type="xsd:int">8</position>
+                    <level xsi:type="xsd:int">3</level>
+                    <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                  </item>
+                  <item xsi:type="ns1:catalogCategoryEntity">
+                    <category_id xsi:type="xsd:int">12</category_id>
+                    <parent_id xsi:type="xsd:int">13</parent_id>
+                    <name xsi:type="xsd:string">Cameras</name>
+                    <is_active xsi:type="xsd:int">1</is_active>
+                    <position xsi:type="xsd:int">12</position>
+                    <level xsi:type="xsd:int">3</level>
+                    <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[2]" xsi:type="ns1:ArrayOfCatalogCategoryEntities">
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">25</category_id>
+                        <parent_id xsi:type="xsd:int">12</parent_id>
+                        <name xsi:type="xsd:string">Accessories</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">25</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">26</category_id>
+                        <parent_id xsi:type="xsd:int">12</parent_id>
+                        <name xsi:type="xsd:string">Digital Cameras</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">26</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                    </children>
+                  </item>
+                  <item xsi:type="ns1:catalogCategoryEntity">
+                    <category_id xsi:type="xsd:int">15</category_id>
+                    <parent_id xsi:type="xsd:int">13</parent_id>
+                    <name xsi:type="xsd:string">Computers</name>
+                    <is_active xsi:type="xsd:int">1</is_active>
+                    <position xsi:type="xsd:int">15</position>
+                    <level xsi:type="xsd:int">3</level>
+                    <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[8]" xsi:type="ns1:ArrayOfCatalogCategoryEntities">
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">27</category_id>
+                        <parent_id xsi:type="xsd:int">15</parent_id>
+                        <name xsi:type="xsd:string">Build Your Own</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">1</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">28</category_id>
+                        <parent_id xsi:type="xsd:int">15</parent_id>
+                        <name xsi:type="xsd:string">Laptops</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">2</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">29</category_id>
+                        <parent_id xsi:type="xsd:int">13</parent_id>
+                        <name xsi:type="xsd:string">Hard Drives</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">3</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">30</category_id>
+                        <parent_id xsi:type="xsd:int">13</parent_id>
+                        <name xsi:type="xsd:string">Monitors</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">4</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">31</category_id>
+                        <parent_id xsi:type="xsd:int">13</parent_id>
+                        <name xsi:type="xsd:string">RAM / Memory</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">5</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">32</category_id>
+                        <parent_id xsi:type="xsd:int">13</parent_id>
+                        <name xsi:type="xsd:string">Cases</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">6</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">33</category_id>
+                        <parent_id xsi:type="xsd:int">13</parent_id>
+                        <name xsi:type="xsd:string">Processors</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">7</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">34</category_id>
+                        <parent_id xsi:type="xsd:int">13</parent_id>
+                        <name xsi:type="xsd:string">Peripherals</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">8</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                    </children>
+                  </item>
+                </children>
+              </item>
+              <item xsi:type="ns1:catalogCategoryEntity">
+                <category_id xsi:type="xsd:int">18</category_id>
+                <parent_id xsi:type="xsd:int">3</parent_id>
+                <name xsi:type="xsd:string">Apparel</name>
+                <is_active xsi:type="xsd:int">1</is_active>
+                <position xsi:type="xsd:int">18</position>
+                <level xsi:type="xsd:int">2</level>
+                <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[4]" xsi:type="ns1:ArrayOfCatalogCategoryEntities">
+                  <item xsi:type="ns1:catalogCategoryEntity">
+                    <category_id xsi:type="xsd:int">4</category_id>
+                    <parent_id xsi:type="xsd:int">18</parent_id>
+                    <name xsi:type="xsd:string">Shirts</name>
+                    <is_active xsi:type="xsd:int">1</is_active>
+                    <position xsi:type="xsd:int">4</position>
+                    <level xsi:type="xsd:int">3</level>
+                    <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                  </item>
+                  <item xsi:type="ns1:catalogCategoryEntity">
+                    <category_id xsi:type="xsd:int">5</category_id>
+                    <parent_id xsi:type="xsd:int">18</parent_id>
+                    <name xsi:type="xsd:string">Shoes</name>
+                    <is_active xsi:type="xsd:int">1</is_active>
+                    <position xsi:type="xsd:int">5</position>
+                    <level xsi:type="xsd:int">3</level>
+                    <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[2]" xsi:type="ns1:ArrayOfCatalogCategoryEntities">
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">16</category_id>
+                        <parent_id xsi:type="xsd:int">5</parent_id>
+                        <name xsi:type="xsd:string">Mens</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">16</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                      <item xsi:type="ns1:catalogCategoryEntity">
+                        <category_id xsi:type="xsd:int">17</category_id>
+                        <parent_id xsi:type="xsd:int">5</parent_id>
+                        <name xsi:type="xsd:string">Womens</name>
+                        <is_active xsi:type="xsd:int">1</is_active>
+                        <position xsi:type="xsd:int">17</position>
+                        <level xsi:type="xsd:int">4</level>
+                        <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                      </item>
+                    </children>
+                  </item>
+                  <item xsi:type="ns1:catalogCategoryEntity">
+                    <category_id xsi:type="xsd:int">19</category_id>
+                    <parent_id xsi:type="xsd:int">18</parent_id>
+                    <name xsi:type="xsd:string">Hoodies</name>
+                    <is_active xsi:type="xsd:int">1</is_active>
+                    <position xsi:type="xsd:int">19</position>
+                    <level xsi:type="xsd:int">3</level>
+                    <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                  </item>
+                  <item xsi:type="ns1:catalogCategoryEntity">
+                    <category_id xsi:type="xsd:int">24</category_id>
+                    <parent_id xsi:type="xsd:int">18</parent_id>
+                    <name xsi:type="xsd:string">Pants</name>
+                    <is_active xsi:type="xsd:int">0</is_active>
+                    <position xsi:type="xsd:int">24</position>
+                    <level xsi:type="xsd:int">3</level>
+                    <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+                  </item>
+                </children>
+              </item>
+              <item xsi:type="ns1:catalogCategoryEntity">
+                <category_id xsi:type="xsd:int">20</category_id>
+                <parent_id xsi:type="xsd:int">3</parent_id>
+                <name xsi:type="xsd:string">Household Items</name>
+                <is_active xsi:type="xsd:int">0</is_active>
+                <position xsi:type="xsd:int">20</position>
+                <level xsi:type="xsd:int">2</level>
+                <children SOAP-ENC:arrayType="ns1:catalogCategoryEntity[0]" xsi:type="ns1:ArrayOfCatalogCategoryEntities"/>
+              </item>
+            </children>
+          </item>
+        </children>
+      </tree>
+    </ns1:catalogCategoryTreeResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
