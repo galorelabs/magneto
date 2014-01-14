@@ -85,9 +85,7 @@ use it:
 
 ## Notes
 
-* This version is tested only with ree-1.8.7-2012.02.
-* May not properly works with 1.9.3.x
-* Future releases will support latest ruby versions
+* This version is tested only Ruby MRI 1.9.3.x
 
 ## Contributing
 
