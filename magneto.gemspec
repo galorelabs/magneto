@@ -21,6 +21,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'equivalent-xml'
 
-  gem.add_runtime_dependency 'savon', '1.2.0'
+  gem.add_runtime_dependency 'savon', '2.3.3'
   gem.add_runtime_dependency 'mustache', '0.99.4'
 end

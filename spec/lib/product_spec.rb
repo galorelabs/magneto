@@ -1,43 +1,45 @@
 require 'spec_helper'
+require "savon/mock/spec_helper"
 
-describe Magneto::Product, '.ensure_session_alive' do
 
-  before do
-    stub_login
+describe Magneto::Product  do
+
+  include Savon::SpecHelper
+  before(:all) do
+    savon.mock! 
+    
+    #Savon Fixtures
+    fixture = File.read("spec/fixture/login.xml")
+    savon.expects(:login).with(message: {username: Magneto.config.api_user, 
+      api_key: Magneto.config.api_key }).returns(fixture)  
   end
+  
+  after(:all)  { savon.unmock! }
 
-  let(:product_api) do
-    Magneto::Product.new
+  it "should be retrievable via Magent.product" do       
+    expect(Magneto.product).to be_a Magneto::Product
+    expect(Magneto.product).to_not be_nil      
   end
+  
+  describe "products_list" do
+    it "must generate a product list" do
+                  
+      fixture = File.read("spec/fixture/catalog_product_list.xml")
+      savon.expects(:catalog_product_list).with(message: :any).returns(fixture)  
+      
+      @products_list = Magneto.product.products_list
+      expect(@products_list).to_not be_nil
+      expect(@products_list).to be_a Array
+      
+      expect(@products_list[0][:product_id]).to eq("16")
+      expect(@products_list[0][:sku]).to eq("n2610")
+      expect(@products_list[0][:name]).to eq("Nokia 2610 Phone")
+      expect(@products_list[0][:set]).to eq("38")
+      expect(@products_list[0][:type]).to eq("simple")
 
-  #poor man mock
-  class Response
-    @@count = 1
-    def self.get
-      if @@count == 1
-        @@count = 2
-        {:fault=>{:faultcode=>"5", :faultstring=>"Session expired. Try to relogin."}}
-      elsif @@count == 2
-         @@count = 1
-         {:call_response=>{:call_return=>"000000010"}}
-      end
     end
   end
-
-
-  it 'should call login and redo block call if response is not succesfull' do
-    product_api.should_receive(:login)
-    response = product_api.ensure_session_alive do
-      res = Response.get
-    end
-    response.should == {:call_response=>{:call_return=>"000000010"}}
-  end
-
-  it 'should not call login and not redo block call if response is succesfull' do
-    product_api.should_not_receive(:login)
-    response = product_api.ensure_session_alive do
-      res = {:call_response=>{:call_return=>"000000010"}}
-    end
-    response.should == {:call_response=>{:call_return=>"000000010"}}
-  end
+  
 end
+
+

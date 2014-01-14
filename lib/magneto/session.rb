@@ -16,7 +16,7 @@ module Magneto
     end
 
     def login
-      client = Savon::Client.new @wsdl_v1
+      client = Savon::Client.new(wsdl:@wsdl_v1)
       response =  client.request(:login, :body => { :username => @api_user , :api_key => @api_key }).to_hash
       if response.has_key? :login_response
         Magneto.client = client

@@ -3,7 +3,7 @@ module Magneto
     attr_accessor :username, :api_key, :client, :session_id
 
     def initialize(options = {})
-      @client = Savon::Client.new(options[:wsdl_v2] || Magneto.config.wsdl_v2) 
+      @client = Savon::Client.new(wsdl: (options[:wsdl_v2] || Magneto.config.wsdl_v2)) 
       @username = options[:api_user] || Magneto.config.api_user
       @api_key = options[:api_key] || Magneto.config.api_key
       @categories = []
@@ -11,8 +11,10 @@ module Magneto
     end
 
     def login
-      response = @client.request :login, :body => { :username => @username, :api_key => @api_key }
+      response = @client.call :login, message: { :username => @username, :api_key => @api_key }
       @session_id = response.to_hash[:login_response][:login_return]
+      @session_id
+      #raise Exception.new @session_id
     end
 
     # addedd filters, eg for filter by status = 1:
@@ -26,7 +28,7 @@ module Magneto
     #           }
     #          }
     def products_list(filters = {})
-      response = @client.request :catalog_product_list, :body => { :session_id => @session_id}.merge(filters)
+      response = @client.call :catalog_product_list, message: { :session_id => @session_id}.merge(filters)
       response.to_hash[:catalog_product_list_response][:store_view][:item]
     end
 
