@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:Magento" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <SOAP-ENV:Body>
+    <ns1:catalogInventoryStockItemListResponse>
+      <result SOAP-ENC:arrayType="ns1:catalogInventoryStockItemEntity[3]" xsi:type="ns1:catalogInventoryStockItemEntityArray">
+        <item xsi:type="ns1:catalogInventoryStockItemEntity">
+          <product_id xsi:type="xsd:string">16</product_id>
+          <sku xsi:type="xsd:string">n2610</sku>
+          <qty xsi:type="xsd:string">996.0000</qty>
+          <is_in_stock xsi:type="xsd:string">1</is_in_stock>
+        </item>
+        <item xsi:type="ns1:catalogInventoryStockItemEntity">
+          <product_id xsi:type="xsd:string">17</product_id>
+          <sku xsi:type="xsd:string">bb8100</sku>
+          <qty xsi:type="xsd:string">797.0000</qty>
+          <is_in_stock xsi:type="xsd:string">1</is_in_stock>
+        </item>
+        <item xsi:type="ns1:catalogInventoryStockItemEntity">
+          <product_id xsi:type="xsd:string">18</product_id>
+          <sku xsi:type="xsd:string">sw810i</sku>
+          <qty xsi:type="xsd:string">989.0000</qty>
+          <is_in_stock xsi:type="xsd:string">1</is_in_stock>
+        </item>
+      </result>
+    </ns1:catalogInventoryStockItemListResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

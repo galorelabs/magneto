@@ -26,6 +26,7 @@ module Magneto
     #            }
     #           }
     #          }
+    
     def products_list(filters = {})
       response = @client.call :catalog_product_list, message: { :session_id => @session_id}.merge(filters)
       response.to_hash[:catalog_product_list_response][:store_view][:item]
@@ -50,7 +51,7 @@ module Magneto
 
     def stock_info(skus)
       response = ensure_session_alive do
-        response = @client.request :catalog_inventory_stock_item_list, :body => { :session_id => @session_id, :products => soap_array('product', skus) }
+        response = @client.call :catalog_inventory_stock_item_list, :message => { :session_id => @session_id, :products => soap_array('product', skus) }
         response = response.to_hash
       end
       #raise Magneto::SoapError.new(response) if response.has_key? :fault

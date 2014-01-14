@@ -27,15 +27,15 @@ describe Magneto::Product  do
       fixture = File.read("spec/fixture/catalog_product_list.xml")
       savon.expects(:catalog_product_list).with(message: :any).returns(fixture)  
       
-      @products_list = Magneto.product.products_list
-      expect(@products_list).to_not be_nil
-      expect(@products_list).to be_an Array
+      products_list = Magneto.product.products_list
+      expect(products_list).to_not be_nil
+      expect(products_list).to be_an Array
       
-      expect(@products_list[0][:product_id]).to eq("16")
-      expect(@products_list[0][:sku]).to eq("n2610")
-      expect(@products_list[0][:name]).to eq("Nokia 2610 Phone")
-      expect(@products_list[0][:set]).to eq("38")
-      expect(@products_list[0][:type]).to eq("simple")
+      expect(products_list[0][:product_id]).to eq("16")
+      expect(products_list[0][:sku]).to eq("n2610")
+      expect(products_list[0][:name]).to eq("Nokia 2610 Phone")
+      expect(products_list[0][:set]).to eq("38")
+      expect(products_list[0][:type]).to eq("simple")
     end
   end
   
@@ -45,25 +45,42 @@ describe Magneto::Product  do
       fixture = File.read("spec/fixture/catalog_category_tree.xml")
       savon.expects(:catalog_category_tree).with(message: :any).returns(fixture) 
       
-      @categories = Magneto.product.categories
+      categories = Magneto.product.categories
 
-      expect(@categories).to be_an Array
+      expect(categories).to be_an Array
       
-      expect(@categories[0][:id]).to eq(3)
-      expect(@categories[0][:name]).to eq("Root Catalog")
-      expect(@categories[0][:is_active]).to eq(1)
-      expect(@categories[0][:position]).to eq(3)
-      expect(@categories[0][:level]).to eq(1)
-      expect(@categories[0][:parent_id]).to eq(1)
+      expect(categories[0][:id]).to eq(3)
+      expect(categories[0][:name]).to eq("Root Catalog")
+      expect(categories[0][:is_active]).to eq(1)
+      expect(categories[0][:position]).to eq(3)
+      expect(categories[0][:level]).to eq(1)
+      expect(categories[0][:parent_id]).to eq(1)
  
-      expect(@categories[1][:id]).to eq(10)
-      expect(@categories[1][:name]).to eq("Furniture")
-      expect(@categories[1][:is_active]).to eq(1)
-      expect(@categories[1][:position]).to eq(10)
-      expect(@categories[1][:level]).to eq(2)
-      expect(@categories[1][:parent_id]).to eq(3)           
+      expect(categories[1][:id]).to eq(10)
+      expect(categories[1][:name]).to eq("Furniture")
+      expect(categories[1][:is_active]).to eq(1)
+      expect(categories[1][:position]).to eq(10)
+      expect(categories[1][:level]).to eq(2)
+      expect(categories[1][:parent_id]).to eq(3)           
+    end    
+  end
+  
+  describe "stock_info" do
+    it "must display quantity of product" do
+
+      fixture = File.read("spec/fixture/catalog_inventory_stock_item_list.xml")
+      savon.expects(:catalog_inventory_stock_item_list).with(message: :any).returns(fixture) 
+      
+      stock_info = Magneto.product.stock_info(['n2610', 'bb8100', 'sw810i'])
+      #puts stock_info.inspect
+
+      expect(stock_info['n2610'][:qty]).to eq("996.0000")
+      expect(stock_info['n2610'][:is_in_stock]).to eq("1")
+      
+      expect(stock_info['bb8100'][:qty]).to eq("797.0000")
+      expect(stock_info['bb8100'][:is_in_stock]).to eq("1")      
+      
     end
-    
   end
   
 end
