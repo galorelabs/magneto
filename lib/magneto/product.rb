@@ -14,7 +14,6 @@ module Magneto
       response = @client.call :login, message: { :username => @username, :api_key => @api_key }
       @session_id = response.to_hash[:login_response][:login_return]
       @session_id
-      #raise Exception.new @session_id
     end
 
     # addedd filters, eg for filter by status = 1:
@@ -124,21 +123,28 @@ module Magneto
     end
 
     def categories
-      return @categories unless @categories.empty?
-      response = @client.request :catalog_category_tree, :body => { :session_id => @session_id}
-      parse_categories response.to_hash[:catalog_category_tree_response][:tree][:children][:item]
-      @categories
+      #return @categories unless @categories.empty?
+      response = @client.call :catalog_category_tree, message: { :session_id => @session_id}
+      #response.to_hash[:catalog_category_tree_response][:tree][:children][:item]
+      #parse_categories response.to_hash[:catalog_category_tree_response][:tree][:children][:item]
+      #@categories
+      @cat_response = response.to_hash[:catalog_category_tree_response][:tree][:children][:item] 
+       if @cat_response
+         @cat_array_to_parse = (@cat_response.is_a? Array) ? @cat_response : [@cat_response]
+         parse_categories @cat_array_to_parse
+       end
+       @categories
     end
 
     def parse_categories(cat)
       cat.each do |c|
         @categories << {
-          :id => c[:category_id],
+          :id => c[:category_id].to_i,
           :name => c[:name],
-          :position => c[:position],
-          :level => c[:level],
-          :is_active => c[:is_active],
-          :parent_id => c[:parent_id]
+          :position => c[:position].to_i,
+          :level => c[:level].to_i,
+          :is_active => c[:is_active].to_i,
+          :parent_id => c[:parent_id].to_i
         }
         parse_categories(c[:children][:item]) if c[:children][:item]
       end

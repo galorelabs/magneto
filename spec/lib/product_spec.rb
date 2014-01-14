@@ -29,15 +29,41 @@ describe Magneto::Product  do
       
       @products_list = Magneto.product.products_list
       expect(@products_list).to_not be_nil
-      expect(@products_list).to be_a Array
+      expect(@products_list).to be_an Array
       
       expect(@products_list[0][:product_id]).to eq("16")
       expect(@products_list[0][:sku]).to eq("n2610")
       expect(@products_list[0][:name]).to eq("Nokia 2610 Phone")
       expect(@products_list[0][:set]).to eq("38")
       expect(@products_list[0][:type]).to eq("simple")
-
     end
+  end
+  
+  describe "categories" do
+    it "must generate a parsed set of categories" do
+      
+      fixture = File.read("spec/fixture/catalog_category_tree.xml")
+      savon.expects(:catalog_category_tree).with(message: :any).returns(fixture) 
+      
+      @categories = Magneto.product.categories
+
+      expect(@categories).to be_an Array
+      
+      expect(@categories[0][:id]).to eq(3)
+      expect(@categories[0][:name]).to eq("Root Catalog")
+      expect(@categories[0][:is_active]).to eq(1)
+      expect(@categories[0][:position]).to eq(3)
+      expect(@categories[0][:level]).to eq(1)
+      expect(@categories[0][:parent_id]).to eq(1)
+ 
+      expect(@categories[1][:id]).to eq(10)
+      expect(@categories[1][:name]).to eq("Furniture")
+      expect(@categories[1][:is_active]).to eq(1)
+      expect(@categories[1][:position]).to eq(10)
+      expect(@categories[1][:level]).to eq(2)
+      expect(@categories[1][:parent_id]).to eq(3)           
+    end
+    
   end
   
 end
