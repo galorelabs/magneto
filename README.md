@@ -75,9 +75,6 @@ use it:
     session.cart.set_payment_method('checkmo')
     session.cart.place_order
 
-
-
-    #this is an inported spikes that uses magento v2 api. not tested.
     Magneto.product.products_list
     Magneto.product.categories
     Magneto.product.product_details(9987)
