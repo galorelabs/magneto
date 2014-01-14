@@ -72,16 +72,38 @@ describe Magneto::Product  do
       savon.expects(:catalog_inventory_stock_item_list).with(message: :any).returns(fixture) 
       
       stock_info = Magneto.product.stock_info(['n2610', 'bb8100', 'sw810i'])
-      #puts stock_info.inspect
-
+      
       expect(stock_info['n2610'][:qty]).to eq("996.0000")
       expect(stock_info['n2610'][:is_in_stock]).to eq("1")
       
       expect(stock_info['bb8100'][:qty]).to eq("797.0000")
-      expect(stock_info['bb8100'][:is_in_stock]).to eq("1")      
-      
+      expect(stock_info['bb8100'][:is_in_stock]).to eq("1")            
     end
   end
+  
+  describe "product_details" do
+    it "displays product details" do
+      
+      fixture = File.read("spec/fixture/catalog_product_info.xml")
+      savon.expects(:catalog_product_info).with(message: :any).returns(fixture)
+      
+      product_details = Magneto.product.product_details('n2610')
+      
+      expect(product_details[:product_id]).to eq("16")
+      expect(product_details[:sku]).to eq("n2610")
+      expect(product_details[:type]).to eq("simple")
+      expect(product_details[:name]).to eq("Nokia 2610 Phone")
+
+      expect(product_details[:price]).to eq("149.9900")
+      expect(product_details[:special_price]).to be_nil
+      expect(product_details[:size]).to be_nil
+      expect(product_details[:color]).to eq("24")      
+      end
+    end
+    
+    describe "product_images" do
+      
+    end
   
 end
 

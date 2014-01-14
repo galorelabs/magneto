@@ -84,7 +84,7 @@ module Magneto
         'additional_attributes' => {'a1' => 'color', 'a2' => 'size', 'a3' => 'special_price'}
       }
       response = ensure_session_alive do
-        response = @client.request :catalog_product_info, :body => { :session_id => @session_id, :product => sku, :identifierType => 'SKU', :attributes => attr}
+        response = @client.call :catalog_product_info, :message => { :session_id => @session_id, :product => sku, :identifierType => 'SKU', :attributes => attr}
         response = response.to_hash
       end
       raise Magneto::SoapError.new(response) if response.has_key? :fault

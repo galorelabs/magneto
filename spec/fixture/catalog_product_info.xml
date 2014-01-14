@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="urn:Magento" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+  <SOAP-ENV:Body>
+    <ns1:catalogProductInfoResponse>
+      <info xsi:type="ns1:catalogProductReturnEntity">
+        <product_id xsi:type="xsd:string">16</product_id>
+        <sku xsi:type="xsd:string">n2610</sku>
+        <set xsi:type="xsd:string">38</set>
+        <type xsi:type="xsd:string">simple</type>
+        <categories SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+          <item xsi:type="xsd:string">8</item>
+        </categories>
+        <websites SOAP-ENC:arrayType="xsd:string[1]" xsi:type="ns1:ArrayOfString">
+          <item xsi:type="xsd:string">1</item>
+        </websites>
+        <name xsi:type="xsd:string">Nokia 2610 Phone</name>
+        <description xsi:type="xsd:string">The Nokia 2610 is an easy to use device that combines multiple messaging options including email, instant messaging, and more. You can even download MP3 ringtones, graphics, and games straight to the phone, or surf the Internet with Cingular's MEdia Net service. It's the perfect complement to Cingular service for those even remotely interested in mobile Web capabilities in an affordable handset.&lt;br&gt;&lt;br&gt;&#13;
+&#13;
+&lt;b&gt;Design&lt;/b&gt;&lt;br&gt;&#13;
+Compact and stylish, the 2610 features a candybar design sporting a bright 128 x 128 pixel display capable of displaying over 65,000 colors. Most of the phone's features and on-screen menus are controlled by a center toggle on the control pad. A standard hands-free headphone jack is provided, as are volume control keys, and there's even a "Go-To" button that can be assigned by the user for quick access to favorite applications. Lastly, the included speakerphone allows you to talk handsfree, and because the phone sports an internal antenna, there's nothing to snag or break off.&#13;
+&#13;
+</description>
+        <status xsi:type="xsd:string">1</status>
+        <visibility xsi:type="xsd:string">4</visibility>
+        <price xsi:type="xsd:string">149.9900</price>
+        <additional_attributes SOAP-ENC:arrayType="ns1:associativeEntity[2]" xsi:type="ns1:associativeArray">
+          <item xsi:type="ns1:associativeEntity">
+            <key xsi:type="xsd:string">special_price</key>
+            <value xsi:nil="true"/>
+          </item>
+          <item xsi:type="ns1:associativeEntity">
+            <key xsi:type="xsd:string">color</key>
+            <value xsi:type="xsd:string">24</value>
+          </item>
+        </additional_attributes>
+      </info>
+    </ns1:catalogProductInfoResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
