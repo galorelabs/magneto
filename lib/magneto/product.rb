@@ -2,8 +2,14 @@ module Magneto
   class Product
     attr_accessor :username, :api_key, :client, :session_id
 
-    def initialize(options = {})
-      @client = Savon::Client.new(wsdl: (options[:wsdl_v2] || Magneto.config.wsdl_v2)) 
+    def initialize(options = {})      
+      if Magneto.mock?
+        @client = Magneto.client  
+      else
+        @client = Savon::Client.new(wsdl: (options[:wsdl_v2] || Magneto.config.wsdl_v2)) 
+      end
+    
+      
       @username = options[:api_user] || Magneto.config.api_user
       @api_key = options[:api_key] || Magneto.config.api_key
       @categories = []

@@ -19,6 +19,14 @@ task :fixture_login do
   soap_fixture.login_then.make_fixture_for :login, message: {username: 'omsapi', api_key: 'asdfgh'}
 end
 
+task :fixture_login_fail do
+  puts "Generating login_fail.xml..."
+  soap_fixture = SoapFixture.new
+  soap_fixture.login_then.make_fixture_for :login, 
+    {message: {username: 'omsapi', api_key: 'wrong-api-key'}}, 
+    'login_fail'
+end
+
 task :fixture_catalog_product_list do
   puts "Generating catalog_product_list.xml..."
   soap_fixture = SoapFixture.new

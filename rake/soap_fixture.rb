@@ -4,7 +4,8 @@ require 'nokogiri'
 class SoapFixture
   
   def initialize
-    @client = Savon::Client.new(wsdl: "http://magento.galoretv.com/index.php/api/v2_soap?wsdl=1") 
+    @client = Savon::Client.new(wsdl: "http://magento.galoretv.com/index.php/api/v2_soap?wsdl=1",
+      raise_errors: false) 
     @username = 'omsapi'
     @api_key = 'asdfgh'
   end
@@ -35,14 +36,16 @@ class SoapFixture
     self #to make this chainable!
   end
 
-  def make_fixture_for(api_method,  api_body = nil)
+  def make_fixture_for(api_method,  api_body = nil, xml_file = nil)
     response = @client.call api_method, api_body || {message: {session_id: @session_id}}
     doc = Nokogiri.XML(response.to_xml) do |config|
       config.default_xml.noblanks
     end
     
-    puts "Writing spec/fixture/#{api_method.to_s}.xml"
-    File.open("spec/fixture/#{api_method.to_s}.xml", 'w+') {|f| f.write(doc)}
+    xml_file = xml_file || api_method.to_s
+    
+    puts "Writing spec/fixture/#{xml_file}.xml"
+    File.open("spec/fixture/#{xml_file}.xml", 'w+') {|f| f.write(doc)}
   end 
   
   

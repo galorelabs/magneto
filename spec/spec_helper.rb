@@ -1,6 +1,7 @@
 require 'magneto'
 require 'equivalent-xml'
 
+#deprecated. Use Savon::Mock
 def stub_login(success=true)
   if success
     return_value = {:login_response=>{:login_return=>"7ab1f29cd18ac06f309c89ba96517ada"}}

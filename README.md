@@ -26,6 +26,13 @@ initializer:
 
 use it:
 
+    Magneto.product.products_list
+    Magneto.product.categories
+    Magneto.product.product_details(9987)
+    Magneto.product.stock_info([9987,9884])
+    
+## Work In Progress
+
     session = Magneto::Session.new
 
     # If you prefer you can set config options per instance:
@@ -73,12 +80,7 @@ use it:
 
     session.cart.set_shipping_method('flatrate_flatrate')
     session.cart.set_payment_method('checkmo')
-    session.cart.place_order
-
-    Magneto.product.products_list
-    Magneto.product.categories
-    Magneto.product.product_details(9987)
-    Magneto.product.stock_info([9987,9884])
+    session.cart.place_order    
 
 ## Notes
 

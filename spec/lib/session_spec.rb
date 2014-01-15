@@ -1,65 +1,59 @@
 require 'spec_helper'
+require "savon/mock/spec_helper"
 
 describe Magneto::Session do
-  it 'should raise error if api_user, api_key and at least one wsdl are not present' do
-    expect { Magneto::Session.new() }.to raise_error(Magneto::ConfigError)
+  include Savon::SpecHelper
+    
+  before(:each) do
+    savon.mock!
   end
-
-  it 'should can override config variables if set in initilizer' do
-    Magneto.configure do |config|
-      config.api_user = 'foo'
-      config.api_key = 'bar'
-      config.wsdl_v1 = 'http://www.example.com/wdsl'
-      config.wsdl_v2 = 'http://www.example.com/wdsl_v2'
-    end
-    options = {
-      :api_user => 'baz',
-      :api_key => 'bonk',
-      :wsdl_v1 => 'http://www.example.com/wdsl1',
-      :wsdl_v2 => 'http://www.example.com/wdsl2',
-    }
-    session = Magneto::Session.new(options)
-    session.instance_variable_get('@api_user').should eq options[:api_user]
-    session.instance_variable_get('@api_key').should eq options[:api_key]
-    session.instance_variable_get('@wsdl_v1').should eq options[:wsdl_v1]
-    session.instance_variable_get('@wsdl_v2').should eq options[:wsdl_v2]
-  end
-end
-
-describe Magneto::Session do
-  before do
-    config_magneto
-  end
+  
+  after(:each) do
+    savon.unmock! 
+  end  
 
   let(:session) do
     Magneto::Session.new
   end
-
-  it 'should set Magneto.client as a Savon::Client instance' do
-    stub_login
-    session.login()
-    Magneto.client.should be_a Savon::Client
+  
+  it 'should raise error if api_user, api_key and at least one wsdl are not present' do
+    savon.unmock!
+    expect { Magneto::Session.new() }.to raise_error(Magneto::ConfigError)
   end
 
+  it 'should set Magneto.client as a Savon::Client instance' do
+      expect(Magneto.client).to_not be_nil
+      expect(Magneto.client).to be_a Savon::Client 
+  end
+  
+
   describe '#login' do
-    it 'should return true if log in succeed' do
-      stub_login
-      session.should be_a Magneto::Session
+    it 'should return true if log in succeed' do     
+      fixture = File.read("spec/fixture/login.xml")
+      savon.expects(:login).with(message: :any).returns(fixture)
+      
+      session = Magneto::Session.new  
       session.login()
-      session.logged.should be true
+      expect(session.logged).to be_true
     end
 
     it 'should should raise error if log is unsuccesful' do
-      stub_login(false)
-      lambda { session.login() } .should raise_error(Magneto::LoginError)
+      fixture = File.read("spec/fixture/login_fail.xml")
+      savon.expects(:login).with(message: :any).returns(fixture)
+      
+      session = Magneto::Session.new  
+      expect{session.login()}.to raise_error(Magneto::LoginError)
     end
   end
 
   describe '@token' do
     it 'should hold session token' do
-      stub_login
+      fixture = File.read("spec/fixture/login.xml")
+      savon.expects(:login).with(message: :any).returns(fixture)      
+      
+      session = Magneto::Session.new 
       session.login()
-      session.token.should eq '7ab1f29cd18ac06f309c89ba96517ada'
+      expect(session.token).to eq '55a5dd43904e0ad8d4aca47644d2b827'
     end
   end
 
