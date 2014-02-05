@@ -3,7 +3,7 @@ require "magneto/xml_template"
 require "magneto/config"
 require "magneto/cart"
 require "magneto/session"
-require "magneto/sales_order"
+require "magneto/sales"
 require "magneto/version"
 require "magneto/errors"
 require 'savon'
