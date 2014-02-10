@@ -43,9 +43,6 @@ module Magneto
 			 return response
 		end  
 		
-		def kamote
-			"Sang damukal na kamote"
-		end
     
 	end
 end
