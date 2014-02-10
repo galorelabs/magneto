@@ -32,7 +32,20 @@ module Magneto
 			 response = @client.call :sales_order_list, message: { :session_id => @session_id}.merge(filters)
 			 response = response.to_hash[:sales_order_list_response][:result][:item]
 			 return response
-		end    
+		end  
+		
+		#Type	 		Name	 				Description
+		#string	 	sessionId	 		Session ID
+		#string	 	orderIncrementId 	Order increment ID		
+		def info(filters = {})
+			 response = @client.call :sales_order_info, message: { :session_id => @session_id}.merge(filters)
+			 response = response.to_hash[:sales_order_info_response][:result]
+			 return response
+		end  
+		
+		def kamote
+			"Sang damukal na kamote"
+		end
     
 	end
 end
