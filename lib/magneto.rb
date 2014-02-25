@@ -39,11 +39,11 @@ module Magneto
   end
   
   def self.product(options = {})
-    @@product ||= Magneto::Product.new(options)
+    @product ||= Magneto::Product.new(options)
   end
 
   def self.sales_order(options = {})
-    @@sales_order ||= Magneto::SalesOrder.new(options)
+    @sales_order ||= Magneto::SalesOrder.new(options)
   end
 
   
