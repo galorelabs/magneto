@@ -92,7 +92,7 @@ module Magneto
     def product_details(sku, filters={})
 
       response = ensure_session_alive do
-        response = @client.call :catalog_product_info, :message => { :session_id => @session_id, :product => sku, :identifierType => 'SKU'}.merge(filters)
+        response = @client.call :catalog_product_info, :message => { :session_id => @session_id, :product => sku, :identifierType => 'SKU'}.merge(:attributes => filters)
         response = response.to_hash
       end
       raise Magneto::SoapError.new(response) if response.has_key? :fault
