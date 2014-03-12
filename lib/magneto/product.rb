@@ -83,21 +83,26 @@ module Magneto
       {:categories => [4,5,6], :type => :amount, :amount => 30},
     ]
 
-    def product_details(sku, price_rules = nil)
-      attr = {
-        'attributes' => {'a1' => 'name','a2' => 'price', 'a3' => 'description', 'a4' => 'status', 'a5' => 'visibility'},
-        #'additionalAttributes' => {'a1' => 'color'},
-        'additional_attributes' => {'a1' => 'color', 'a2' => 'size', 'a3' => 'special_price'}
-      }
+    # Additional Filters
+    # filter => {
+    #   'attributes' => {'key1' => 'attributename', 'key2' => 'attributename' }
+    #   'additional_attributes {'key1' => 'attributename', . . . }'
+    # }
+
+    def product_details(sku, filters={})
+
       response = ensure_session_alive do
-        response = @client.call :catalog_product_info, :message => { :session_id => @session_id, :product => sku, :identifierType => 'SKU', :attributes => attr}
+        response = @client.call :catalog_product_info, :message => { :session_id => @session_id, :product => sku, :identifierType => 'SKU'}.merge(:attributes => filters)
         response = response.to_hash
       end
       raise Magneto::SoapError.new(response) if response.has_key? :fault
       product = response.to_hash[:catalog_product_info_response][:info]
+
+=begin
       product.delete(:"@xsi:type")
       product.delete(:set)
       product.delete(:websites)
+
       #product.delete(:categories)
       attributes = product.delete(:additional_attributes)
       if attributes[:item].is_a? Array
@@ -109,6 +114,7 @@ module Magneto
         product[:size] = nil
         product[:color] = nil
       end
+=end
       product
     end
 
